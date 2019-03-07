@@ -1,0 +1,59 @@
+{
+  "description": "The API console used in RAML platform.",
+  "keywords": [
+    "web-components",
+    "polymer",
+    "raml",
+    "api",
+    "console"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mulesoft/api-console.git"
+  },
+  "name": "api-console",
+  "version": "6.0.0-preview.1",
+  "license": "CPAL-1.0",
+  "devDependencies": {
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "fs-extra": "^7.0.1",
+    "merge-stream": "^1.0.1",
+    "parse5": "^5.1.0",
+    "polymer-build": "^3.1.2",
+    "vinyl-fs": "^3.0.3"
+  },
+  "main": "api-console.js",
+  "authors": [
+    "Pawel Psztyc",
+    "The Advanced REST client authors <arc@mulesoft.com>"
+  ],
+  "scripts": {
+    "build": "NODE_OPTIONS=--max_old_space_size=2048 node build.js"
+  },
+  "bugs": {
+    "url": "https://github.com/advanced-rest-client/lc-api-console/issues",
+    "email": "arc@mulesoft.com"
+  },
+  "dependencies": {
+    "@advanced-rest-client/oauth-authorization": "^3.0.0-preview.2",
+    "@advanced-rest-client/xhr-simple-request": "^3.0.0-preview.1",
+    "@api-components/amf-helper-mixin": "^3.0.0-preview.1",
+    "@api-components/api-console-default-theme": "^3.0.0-preview.1",
+    "@api-components/api-console-ext-comm": "^3.0.0-preview.1",
+    "@api-components/api-documentation": "^3.0.0-preview.1",
+    "@api-components/api-navigation": "^3.0.0-preview.1",
+    "@api-components/api-request-panel": "^3.0.0-preview.1",
+    "@polymer/app-layout": "^3.0.0",
+    "@polymer/app-route": "^3.0.0",
+    "@polymer/iron-flex-layout": "^3.0.0",
+    "@polymer/iron-media-query": "^3.0.0",
+    "@polymer/paper-icon-button": "^3.0.0",
+    "@polymer/paper-toast": "^3.0.0",
+    "@polymer/polymer": "^3.0.0",
+    "web-animations-js": "^2.3.1"
+  },
+  "contributors": [
+    "Pawel Psztyc",
+    "The Advanced REST client authors <arc@mulesoft.com>"
+  ]
+}
