@@ -7,8 +7,9 @@ const parse5 = require('parse5');
 // const UglifyJS = require('uglify-js');
 
 class LcBuilder {
-  get workingBuildOutput() {
-    return 'build';
+  constructor() {
+    this.startDir = process.cwd();
+    this.workingBuildOutput = path.join(this.startDir, 'build');
   }
 
   waitFor(stream) {
@@ -21,7 +22,9 @@ class LcBuilder {
   build() {
     return fs.remove(this.workingBuildOutput)
     .then(() => fs.ensureDir(this.workingBuildOutput))
+    .then(() => process.chdir('components'))
     .then(() => this.polymerBuild())
+    .then(() => process.chdir(this.startDir))
     .then(() => this.prepareLcSources())
     // return this.prepareLcSources()
     .then(() => {
@@ -36,7 +39,7 @@ class LcBuilder {
     if (!this.bundleIndex) {
       this.bundleIndex = 0;
     }
-    const polymerProject = new PolymerProject(require('./polymer.json'));
+    const polymerProject = new PolymerProject(require('./components/polymer.json'));
     if (!this.bundleIndex) {
       const size = polymerProject.config.builds.length;
       console.info(`Found ${size} build configurations.`);
@@ -73,7 +76,13 @@ class LcBuilder {
     console.info(`(${buildName}) Analyzing...`);
     const startTime = Date.now();
     const sourcesStream = forkStream(polymerProject.sources());
+    sourcesStream.on('error', (e) => {
+      console.error(`(${buildName}) Build error`, e);
+    });
     const depsStream = forkStream(polymerProject.dependencies());
+    depsStream.on('error', (e) => {
+      console.error(`(${buildName}) Build error`, e);
+    });
     let buildStream = mergeStream(sourcesStream, depsStream);
     if (buildName === 'es5-bundle') {
       buildStream = buildStream.pipe(polymerProject.addCustomElementsEs5Adapter());
@@ -83,6 +92,9 @@ class LcBuilder {
     };
     Object.assign(bundlerOptions, bundle);
     buildStream = buildStream.pipe(polymerProject.bundler(bundlerOptions));
+    buildStream.on('error', (e) => {
+      console.error(`(${buildName}) Build error`, e);
+    });
     const htmlSplitter = new HtmlSplitter();
     buildStream = this.pipeStreams([
       buildStream,
@@ -94,7 +106,7 @@ class LcBuilder {
           moduleResolution: polymerProject.config.moduleResolution,
         }, bundle.js),
         entrypointPath: polymerProject.config.entrypoint,
-        rootDir: polymerProject.config.root,
+        rootDir: path.join(polymerProject.config.root, 'components'),
       }),
       htmlSplitter.rejoin()
     ]);
@@ -103,6 +115,9 @@ class LcBuilder {
     });
     buildStream.on('end', () => {
       console.info(`(${buildName}) Build ready.`);
+    });
+    buildStream.on('error', (e) => {
+      console.error(`(${buildName}) Build error`, e);
     });
     // if (bundle.basePath) {
     //   let basePath = bundle.basePath === true ? buildName : bundle.basePath;
@@ -124,34 +139,74 @@ class LcBuilder {
   }
 
   prepareLcSources() {
+    const libs = this.readLibraries();
     return fs.readdir(this.workingBuildOutput, {
       withFileTypes: true
     })
     .then((files) => {
-      return Promise.all(files.map((item) => this._prepareLcScripts(item)));
+      return Promise.all(files.map((item) => this._prepareLcScripts(item, libs)));
     });
   }
 
-  _prepareLcScripts(item) {
+  _prepareLcScripts(item, prefix) {
     if (!item.isDirectory()) {
       return Promise.resolve();
     }
     const base = path.join(this.workingBuildOutput, item.name);
     const entry = path.join(base, 'entrypoint.html');
-    const depsScript = path.join(this.workingBuildOutput, item.name, 'head.js');
+    const apicFile = path.join(this.workingBuildOutput, item.name, 'api-console.js');
     let doc;
     return fs.readFile(entry, 'utf8')
     .then((content) => {
       doc = parse5.parse(content);
       const head = doc.childNodes[1].childNodes[0];
       const scripts = this._findScripts(head);
-      const data = scripts.join('\n');
-      return fs.writeFile(depsScript, data, 'utf8');
+      if (!scripts.length) {
+        return;
+      }
+      const data = fs.readFileSync(apicFile);
+      const fd = fs.openSync(apicFile, 'w+');
+      const insert = Buffer.from(scripts.join('\n'));
+      const insert2 = Buffer.from(prefix);
+      fs.writeSync(fd, insert, 0, insert.length, 0);
+      fs.writeSync(fd, insert2, 0, insert2.length, insert.length);
+      fs.writeSync(fd, data, 0, data.length, insert.length + insert2.length);
+      return fs.close(fd);
     })
     .catch((cause) => {
       console.error(cause);
       throw cause;
     });
+  }
+
+  readLibraries() {
+    const libs = [
+      'components/node_modules/jsonlint/lib/jsonlint.js',
+      'components/node_modules/codemirror/lib/codemirror.js',
+      'components/node_modules/codemirror/addon/mode/loadmode.js',
+      'components/node_modules/codemirror/mode/meta.js',
+      'components/node_modules/codemirror/mode/javascript/javascript.js',
+      'components/node_modules/codemirror/mode/xml/xml.js',
+      'components/node_modules/codemirror/mode/htmlmixed/htmlmixed.js',
+      'components/node_modules/codemirror/addon/lint/lint.js',
+      'components/node_modules/codemirror/addon/lint/json-lint.js',
+      'components/node_modules/@advanced-rest-client/code-mirror-hint/headers-addon.js',
+      'components/node_modules/@advanced-rest-client/code-mirror-hint/show-hint.js',
+      'components/node_modules/@advanced-rest-client/code-mirror-hint/hint-http-headers.js',
+      'components/node_modules/cryptojslib/components/core.js',
+      'components/node_modules/cryptojslib/rollups/sha1.js',
+      'components/node_modules/cryptojslib/components/enc-base64-min.js',
+      'components/node_modules/cryptojslib/rollups/md5.js',
+      'components/node_modules/cryptojslib/rollups/hmac-sha1.js',
+      'components/node_modules/jsrsasign/lib/jsrsasign-rsa-min.js',
+      'components/node_modules/web-animations-js/web-animations-next.min.js',
+    ];
+    const data = [];
+    for (let i = 0; i < libs.length; i++) {
+      const code = fs.readFileSync(libs[i], 'utf8');
+      data[data.length] = code;
+    }
+    return data.join('\n') + '\n';
   }
 
   /**
@@ -176,10 +231,13 @@ class LcBuilder {
         //   mangle: false
         // });
         // result[result.length] = `/* ${src} */ ${result.code}`;
-        const code = fs.readFileSync(src, 'utf8');
+        const code = fs.readFileSync(path.join('components', src), 'utf8');
         result[result.length] = `/* ${src} */ ${code}`;
       } else {
         const txtNode = item.childNodes[0].value;
+        if (txtNode === 'define([\'api-console.js\']);') {
+          continue;
+        }
         result[result.length] = txtNode;
       }
     }

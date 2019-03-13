@@ -5,10 +5,15 @@ This is a bundler script that generates production ready sources for the console
 
 ## Usage
 
+**Use Yarn!** Npm is not adjusted to handle web components, yet developer community and browser vendors opted to use ES modules as they are right now.
+Because components needs flat structure but rest of node modules requires nested structure, I suggest to install dependencies using Yarn. Npm most likely produce unexpected results.
+
 ```sh
 git clone git@github.com:advanced-rest-client/lc-api-console.git
 cd lc-api-console
 npm i
+# this is "prepare" script
+# cd components && yarn install && cd ..
 npm run build
 ```
 
@@ -29,9 +34,10 @@ By default it is relative to current location.
     basePath: 'https://cdn.domain.com/lc-apic/'
   };
   </script>
-  <script src="https://cdn.domain.com/lc-apic/apic-import.js"></script>
+  <script src="https://cdn.domain.com/lc-apic/build/es6prod/api-console.js"></script>
 </head>
 <body>
-  <api-console></api-console>
+  <api-navigation></api-navigation>
+  <api-documentation></api-documentation>
+  <api-request-panel></api-request-panel>
 </body>
-```
