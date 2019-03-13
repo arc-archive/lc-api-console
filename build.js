@@ -73,7 +73,13 @@ class LcBuilder {
     console.info(`(${buildName}) Analyzing...`);
     const startTime = Date.now();
     const sourcesStream = forkStream(polymerProject.sources());
+    sourcesStream.on('error', (e) => {
+      console.error(`(${buildName}) Build error`, e);
+    });
     const depsStream = forkStream(polymerProject.dependencies());
+    depsStream.on('error', (e) => {
+      console.error(`(${buildName}) Build error`, e);
+    });
     let buildStream = mergeStream(sourcesStream, depsStream);
     if (buildName === 'es5-bundle') {
       buildStream = buildStream.pipe(polymerProject.addCustomElementsEs5Adapter());
@@ -83,6 +89,9 @@ class LcBuilder {
     };
     Object.assign(bundlerOptions, bundle);
     buildStream = buildStream.pipe(polymerProject.bundler(bundlerOptions));
+    buildStream.on('error', (e) => {
+      console.error(`(${buildName}) Build error`, e);
+    });
     const htmlSplitter = new HtmlSplitter();
     buildStream = this.pipeStreams([
       buildStream,
@@ -104,6 +113,9 @@ class LcBuilder {
     buildStream.on('end', () => {
       console.info(`(${buildName}) Build ready.`);
     });
+    buildStream.on('error', (e) => {
+      console.error(`(${buildName}) Build error`, e);
+    });
     // if (bundle.basePath) {
     //   let basePath = bundle.basePath === true ? buildName : bundle.basePath;
     //   if (!basePath.startsWith('/')) {
@@ -124,13 +136,9 @@ class LcBuilder {
   }
 
   prepareLcSources() {
-    let libs;
-    return this.readLibraries()
-    .then((data) => {
-      libs = data;
-      return fs.readdir(this.workingBuildOutput, {
-        withFileTypes: true
-      });
+    const libs = this.readLibraries();
+    return fs.readdir(this.workingBuildOutput, {
+      withFileTypes: true
     })
     .then((files) => {
       return Promise.all(files.map((item) => this._prepareLcScripts(item, libs)));
@@ -138,8 +146,6 @@ class LcBuilder {
   }
 
   _prepareLcScripts(item, prefix) {
-    console.log('aaaaaaaaa');
-    console.log(prefix);
     if (!item.isDirectory()) {
       return Promise.resolve();
     }
@@ -197,7 +203,7 @@ class LcBuilder {
       const code = fs.readFileSync(libs[i], 'utf8');
       data[data.length] = code;
     }
-    return data.join('\n');
+    return data.join('\n') + '\n';
   }
 
   /**
