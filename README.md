@@ -11,7 +11,9 @@ Because components needs flat structure but rest of node modules requires nested
 ```sh
 git clone git@github.com:advanced-rest-client/lc-api-console.git
 cd lc-api-console
-yarn i
+npm i
+# this is "prepare" script
+# cd components && yarn install && cd ..
 npm run build
 ```
 

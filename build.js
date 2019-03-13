@@ -7,8 +7,9 @@ const parse5 = require('parse5');
 // const UglifyJS = require('uglify-js');
 
 class LcBuilder {
-  get workingBuildOutput() {
-    return 'build';
+  constructor() {
+    this.startDir = process.cwd();
+    this.workingBuildOutput = path.join(this.startDir, 'build');
   }
 
   waitFor(stream) {
@@ -21,7 +22,9 @@ class LcBuilder {
   build() {
     return fs.remove(this.workingBuildOutput)
     .then(() => fs.ensureDir(this.workingBuildOutput))
+    .then(() => process.chdir('components'))
     .then(() => this.polymerBuild())
+    .then(() => process.chdir(this.startDir))
     .then(() => this.prepareLcSources())
     // return this.prepareLcSources()
     .then(() => {
@@ -36,7 +39,7 @@ class LcBuilder {
     if (!this.bundleIndex) {
       this.bundleIndex = 0;
     }
-    const polymerProject = new PolymerProject(require('./polymer.json'));
+    const polymerProject = new PolymerProject(require('./components/polymer.json'));
     if (!this.bundleIndex) {
       const size = polymerProject.config.builds.length;
       console.info(`Found ${size} build configurations.`);
@@ -103,7 +106,7 @@ class LcBuilder {
           moduleResolution: polymerProject.config.moduleResolution,
         }, bundle.js),
         entrypointPath: polymerProject.config.entrypoint,
-        rootDir: polymerProject.config.root,
+        rootDir: path.join(polymerProject.config.root, 'components'),
       }),
       htmlSplitter.rejoin()
     ]);
@@ -178,25 +181,25 @@ class LcBuilder {
 
   readLibraries() {
     const libs = [
-      'node_modules/jsonlint/lib/jsonlint.js',
-      'node_modules/codemirror/lib/codemirror.js',
-      'node_modules/codemirror/addon/mode/loadmode.js',
-      'node_modules/codemirror/mode/meta.js',
-      'node_modules/codemirror/mode/javascript/javascript.js',
-      'node_modules/codemirror/mode/xml/xml.js',
-      'node_modules/codemirror/mode/htmlmixed/htmlmixed.js',
-      'node_modules/codemirror/addon/lint/lint.js',
-      'node_modules/codemirror/addon/lint/json-lint.js',
-      'node_modules/@advanced-rest-client/code-mirror-hint/headers-addon.js',
-      'node_modules/@advanced-rest-client/code-mirror-hint/show-hint.js',
-      'node_modules/@advanced-rest-client/code-mirror-hint/hint-http-headers.js',
-      'node_modules/cryptojslib/components/core.js',
-      'node_modules/cryptojslib/rollups/sha1.js',
-      'node_modules/cryptojslib/components/enc-base64-min.js',
-      'node_modules/cryptojslib/rollups/md5.js',
-      'node_modules/cryptojslib/rollups/hmac-sha1.js',
-      'node_modules/jsrsasign/lib/jsrsasign-rsa-min.js',
-      'node_modules/web-animations-js/web-animations-next.min.js',
+      'components/node_modules/jsonlint/lib/jsonlint.js',
+      'components/node_modules/codemirror/lib/codemirror.js',
+      'components/node_modules/codemirror/addon/mode/loadmode.js',
+      'components/node_modules/codemirror/mode/meta.js',
+      'components/node_modules/codemirror/mode/javascript/javascript.js',
+      'components/node_modules/codemirror/mode/xml/xml.js',
+      'components/node_modules/codemirror/mode/htmlmixed/htmlmixed.js',
+      'components/node_modules/codemirror/addon/lint/lint.js',
+      'components/node_modules/codemirror/addon/lint/json-lint.js',
+      'components/node_modules/@advanced-rest-client/code-mirror-hint/headers-addon.js',
+      'components/node_modules/@advanced-rest-client/code-mirror-hint/show-hint.js',
+      'components/node_modules/@advanced-rest-client/code-mirror-hint/hint-http-headers.js',
+      'components/node_modules/cryptojslib/components/core.js',
+      'components/node_modules/cryptojslib/rollups/sha1.js',
+      'components/node_modules/cryptojslib/components/enc-base64-min.js',
+      'components/node_modules/cryptojslib/rollups/md5.js',
+      'components/node_modules/cryptojslib/rollups/hmac-sha1.js',
+      'components/node_modules/jsrsasign/lib/jsrsasign-rsa-min.js',
+      'components/node_modules/web-animations-js/web-animations-next.min.js',
     ];
     const data = [];
     for (let i = 0; i < libs.length; i++) {
@@ -228,7 +231,7 @@ class LcBuilder {
         //   mangle: false
         // });
         // result[result.length] = `/* ${src} */ ${result.code}`;
-        const code = fs.readFileSync(src, 'utf8');
+        const code = fs.readFileSync(path.join('components', src), 'utf8');
         result[result.length] = `/* ${src} */ ${code}`;
       } else {
         const txtNode = item.childNodes[0].value;
