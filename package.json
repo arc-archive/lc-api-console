@@ -21,7 +21,7 @@
   ],
   "scripts": {
     "build": "NODE_OPTIONS=--max_old_space_size=2048 node build.js",
-    "prepare": "cd components && yarn i install"
+    "prepare": "cd components && yarn install"
   },
   "bugs": {
     "url": "https://github.com/advanced-rest-client/lc-api-console/issues",
