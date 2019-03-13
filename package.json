@@ -9,9 +9,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/mulesoft/api-console.git"
+    "url": "git://github.com/advanced-rest-client/lc-api-console.git"
   },
-  "name": "api-console",
+  "name": "lc-api-console",
   "version": "6.0.0-preview.1",
   "license": "CPAL-1.0",
   "devDependencies": {
@@ -39,16 +39,10 @@
     "@advanced-rest-client/xhr-simple-request": "^3.0.0-preview.1",
     "@api-components/amf-helper-mixin": "^3.0.0-preview.1",
     "@api-components/api-console-default-theme": "^3.0.0-preview.1",
-    "@api-components/api-console-ext-comm": "^3.0.0-preview.1",
     "@api-components/api-documentation": "^3.0.0-preview.1",
     "@api-components/api-navigation": "^3.0.0-preview.1",
     "@api-components/api-request-panel": "^3.0.0-preview.1",
-    "@polymer/app-layout": "^3.0.0",
-    "@polymer/app-route": "^3.0.0",
     "@polymer/iron-flex-layout": "^3.0.0",
-    "@polymer/iron-media-query": "^3.0.0",
-    "@polymer/paper-icon-button": "^3.0.0",
-    "@polymer/paper-toast": "^3.0.0",
     "@polymer/polymer": "^3.0.0",
     "web-animations-js": "^2.3.1"
   },

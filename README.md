@@ -35,3 +35,9 @@ By default it is relative to current location.
   <api-console></api-console>
 </body>
 ```
+
+{
+  "name": "es5prod",
+  "preset": "es5-bundled",
+  "addServiceWorker": false
+},

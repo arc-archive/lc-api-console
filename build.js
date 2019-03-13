@@ -124,34 +124,80 @@ class LcBuilder {
   }
 
   prepareLcSources() {
-    return fs.readdir(this.workingBuildOutput, {
-      withFileTypes: true
+    let libs;
+    return this.readLibraries()
+    .then((data) => {
+      libs = data;
+      return fs.readdir(this.workingBuildOutput, {
+        withFileTypes: true
+      });
     })
     .then((files) => {
-      return Promise.all(files.map((item) => this._prepareLcScripts(item)));
+      return Promise.all(files.map((item) => this._prepareLcScripts(item, libs)));
     });
   }
 
-  _prepareLcScripts(item) {
+  _prepareLcScripts(item, prefix) {
+    console.log('aaaaaaaaa');
+    console.log(prefix);
     if (!item.isDirectory()) {
       return Promise.resolve();
     }
     const base = path.join(this.workingBuildOutput, item.name);
     const entry = path.join(base, 'entrypoint.html');
-    const depsScript = path.join(this.workingBuildOutput, item.name, 'head.js');
+    const apicFile = path.join(this.workingBuildOutput, item.name, 'api-console.js');
     let doc;
     return fs.readFile(entry, 'utf8')
     .then((content) => {
       doc = parse5.parse(content);
       const head = doc.childNodes[1].childNodes[0];
       const scripts = this._findScripts(head);
-      const data = scripts.join('\n');
-      return fs.writeFile(depsScript, data, 'utf8');
+      if (!scripts.length) {
+        return;
+      }
+      const data = fs.readFileSync(apicFile);
+      const fd = fs.openSync(apicFile, 'w+');
+      const insert = Buffer.from(scripts.join('\n'));
+      const insert2 = Buffer.from(prefix);
+      fs.writeSync(fd, insert, 0, insert.length, 0);
+      fs.writeSync(fd, insert2, 0, insert2.length, insert.length);
+      fs.writeSync(fd, data, 0, data.length, insert.length + insert2.length);
+      return fs.close(fd);
     })
     .catch((cause) => {
       console.error(cause);
       throw cause;
     });
+  }
+
+  readLibraries() {
+    const libs = [
+      'node_modules/jsonlint/lib/jsonlint.js',
+      'node_modules/codemirror/lib/codemirror.js',
+      'node_modules/codemirror/addon/mode/loadmode.js',
+      'node_modules/codemirror/mode/meta.js',
+      'node_modules/codemirror/mode/javascript/javascript.js',
+      'node_modules/codemirror/mode/xml/xml.js',
+      'node_modules/codemirror/mode/htmlmixed/htmlmixed.js',
+      'node_modules/codemirror/addon/lint/lint.js',
+      'node_modules/codemirror/addon/lint/json-lint.js',
+      'node_modules/@advanced-rest-client/code-mirror-hint/headers-addon.js',
+      'node_modules/@advanced-rest-client/code-mirror-hint/show-hint.js',
+      'node_modules/@advanced-rest-client/code-mirror-hint/hint-http-headers.js',
+      'node_modules/cryptojslib/components/core.js',
+      'node_modules/cryptojslib/rollups/sha1.js',
+      'node_modules/cryptojslib/components/enc-base64-min.js',
+      'node_modules/cryptojslib/rollups/md5.js',
+      'node_modules/cryptojslib/rollups/hmac-sha1.js',
+      'node_modules/jsrsasign/lib/jsrsasign-rsa-min.js',
+      'node_modules/web-animations-js/web-animations-next.min.js',
+    ];
+    const data = [];
+    for (let i = 0; i < libs.length; i++) {
+      const code = fs.readFileSync(libs[i], 'utf8');
+      data[data.length] = code;
+    }
+    return data.join('\n');
   }
 
   /**
@@ -180,6 +226,9 @@ class LcBuilder {
         result[result.length] = `/* ${src} */ ${code}`;
       } else {
         const txtNode = item.childNodes[0].value;
+        if (txtNode === 'define([\'api-console.js\']);') {
+          continue;
+        }
         result[result.length] = txtNode;
       }
     }
