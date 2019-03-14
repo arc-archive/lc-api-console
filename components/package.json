@@ -52,10 +52,10 @@
     "The Advanced REST client authors <arc@mulesoft.com>"
   ],
   "resolutions": {
-    "@polymer/iron-validatable-behavior": "3.0.0-preview.1",
+    "@polymer/iron-validatable-behavior": "github:anypoint-components/iron-validatable-behavior#3.0.0-preview",
     "@polymer/iron-validator-behavior": "github:anypoint-components/iron-validator-behavior#3.0.0-preview",
-    "@polymer/paper-checkbox": "3.0.0-preview.1",
-    "@polymer/paper-dropdown-menu": "3.0.0-preview.1",
-    "@polymer/paper-input": "3.0.0-preview.1"
+    "@polymer/paper-checkbox": "github:anypoint-components/paper-checkbox#3.0.0-preview",
+    "@polymer/paper-dropdown-menu": "github:anypoint-components/paper-dropdown-menu#3.0.0-preview",
+    "@polymer/paper-input": "github:anypoint-components/paper-input#3.0.0-preview"
   }
 }
