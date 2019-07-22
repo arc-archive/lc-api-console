@@ -17,28 +17,38 @@
   dependencies:
     "@polymer/polymer" "^3.0.0"
 
-"@advanced-rest-client/arc-icons@^3.0.0-preview.1", "@advanced-rest-client/arc-icons@github:anypoint-components/anypoint-icons#3.0.0-preview":
+"@advanced-rest-client/arc-icons@3.0.0-preview.1", "@advanced-rest-client/arc-icons@^3.0.0", "@advanced-rest-client/arc-icons@^3.0.0-preview.1", "@advanced-rest-client/arc-icons@^3.0.0-preview.2", "@advanced-rest-client/arc-icons@github:anypoint-components/anypoint-icons#3.0.0-preview":
   version "3.0.0-preview.1"
-  resolved "https://codeload.github.com/anypoint-components/anypoint-icons/tar.gz/747e26de49d73b4446fc793329e77ce61b4768b6"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/arc-icons/-/arc-icons-3.0.0-preview.1.tgz#6669f7b2146d0aabd076639a70d08c52f8440027"
+  integrity sha512-l3CnBzHKw4R9+CRf7PzL/KE1PHdiB0zfJRlzI/VcxHXx20OFimVS0/Rj35bi22CeFiSLAixNqy5OA0okTDqUOA==
   dependencies:
-    "@polymer/iron-icon" "^3.0.1"
-    "@polymer/iron-iconset-svg" "^3.0.1"
-    "@polymer/polymer" "^3.1.0"
+    "@polymer/iron-icon" "^3.0.0"
+    "@polymer/iron-iconset-svg" "^3.0.0"
+    "@polymer/polymer" "^3.0.0"
 
-"@advanced-rest-client/auth-methods@^4.0.0-preview.2":
-  version "4.0.0-preview.2"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/auth-methods/-/auth-methods-4.0.0-preview.2.tgz#5ed5a868cd14515213991cb6d26a83f1e8e06f4d"
-  integrity sha512-dIq8UAmkdzsRfPJd1IvlDcgihyQCZ5dDw+iTF+6qnxUB++/DP0KoRuoCUK75zYYi2VkVixmPpdKFy+L1G3unoA==
+"@advanced-rest-client/arc-marked@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/arc-marked/-/arc-marked-1.0.0.tgz#ab80dfdaa3250fcccc90223cfdeaeab22a2896e4"
+  integrity sha512-anlZ7K/xxEm+MfmcQ2wW/w15IOd1EzoTWQtKwdPQqWQTy4q1XM5qYWjjBlmH0wqS4pSG1DR9eFvWLezR4syDug==
   dependencies:
-    "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
-    "@advanced-rest-client/events-target-mixin" "^3.0.0-preview.1"
+    lit-element "^2.0.1"
+    lit-html "^1.0.0"
+    marked "^0.6.2"
+
+"@advanced-rest-client/auth-methods@^4.0.0-preview.3":
+  version "4.0.0-preview.4"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/auth-methods/-/auth-methods-4.0.0-preview.4.tgz#e1ac552d144e904231642fad1a79b61c84944014"
+  integrity sha512-KhhP4dj10XUiKjQ+7qE8uyWX2Jabv3YM1lvdxZOE86dWhMiOBInTYVrvJAq4KCPYTHQreT1ClKjI1q2bcJeCwQ==
+  dependencies:
+    "@advanced-rest-client/arc-icons" "^3.0.0-preview.2"
+    "@advanced-rest-client/clipboard-copy" "^3.0.0-preview.1"
+    "@advanced-rest-client/events-target-mixin" "^3.0.0-preview.2"
     "@advanced-rest-client/markdown-styles" "^3.0.0-preview.1"
-    "@advanced-rest-client/oauth2-scope-selector" "^3.0.0-preview.1"
+    "@advanced-rest-client/oauth2-scope-selector" "^3.0.0-preview.3"
     "@advanced-rest-client/paper-masked-input" "^3.0.0-preview.1"
     "@api-components/amf-helper-mixin" "^3.0.0-preview.1"
     "@api-components/api-property-form-item" "^3.0.0-preview.1"
     "@api-components/api-view-model-transformer" "^3.0.0-preview.1"
-    "@api-components/clipboard-copy" "^3.0.0-preview.1"
     "@polymer/iron-collapse" "^3.0.0"
     "@polymer/iron-flex-layout" "^3.0.0"
     "@polymer/iron-form" "^3.0.0"
@@ -53,9 +63,32 @@
     "@polymer/paper-item" "^3.0.0"
     "@polymer/paper-listbox" "^3.0.0"
     "@polymer/paper-ripple" "^3.0.0"
-    "@polymer/paper-spinner" "^3.0.0"
+    "@polymer/paper-spinner" "^3.0.2"
     "@polymer/paper-toast" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/polymer" "^3.2.0"
+
+"@advanced-rest-client/authorization-panel@^3.0.0-preview.2":
+  version "3.0.0-preview.2"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/authorization-panel/-/authorization-panel-3.0.0-preview.2.tgz#6aae0394e2341869d16ca22a95e20653d84acfda"
+  integrity sha512-x0QdhH5EOWpHAdWC/g+5vFzbmiuklf31/5q4CxTLXcKbatm7tudcdzrjpLSnlMoOOw9MO9NBA07h2arzExZHYA==
+  dependencies:
+    "@advanced-rest-client/auth-methods" "^4.0.0-preview.3"
+    "@advanced-rest-client/events-target-mixin" "^3.0.0-preview.2"
+    "@api-components/amf-helper-mixin" "^3.0.0-preview.1"
+    "@polymer/iron-flex-layout" "^3.0.0"
+    "@polymer/iron-meta" "^3.0.0"
+    "@polymer/paper-dropdown-menu" "^3.0.0"
+    "@polymer/paper-item" "^3.0.0"
+    "@polymer/paper-listbox" "^3.0.0"
+    "@polymer/paper-ripple" "^3.0.0"
+    "@polymer/polymer" "^3.2.0"
+    cryptojslib "^3.1.2"
+    jsrsasign "^8.0.12"
+
+"@advanced-rest-client/clipboard-copy@^3.0.0", "@advanced-rest-client/clipboard-copy@^3.0.0-preview.1":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/clipboard-copy/-/clipboard-copy-3.0.0.tgz#deb06f03494e00185620e0dd55af9f05e6fa653f"
+  integrity sha512-z+4D/RbLWly3AGdsUAb+sox3T8z08uMCK8V27BgLMnGZIeHfFZfyycGQn908irEh0Gl/Hbf9PNg4imYmg73dUQ==
 
 "@advanced-rest-client/code-mirror-hint@^3.0.0-preview.1":
   version "3.0.0-preview.1"
@@ -103,22 +136,19 @@
   resolved "https://registry.yarnpkg.com/@advanced-rest-client/date-time/-/date-time-3.0.0-preview.1.tgz#196538620d71ba18fb752fef88109fb27206e1de"
   integrity sha512-FExUiY1mfPlyLz50LauPVsrRwofCyOhCT19gg4oV74kSPWE8mNJd7AvK0O6t76kL9v0YJ+5efrIzLraO084JZQ==
 
-"@advanced-rest-client/error-message@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/error-message/-/error-message-3.0.0-preview.1.tgz#c0f28da8006f37063f166fc1f5d2816029fbfd27"
-  integrity sha512-zsjp9qZOXQGzPmD5hQXAsxzEPBGS8lwbOL4tZGhkrWRYkHOY0BNirRBYqm3bPDjrOyQvsYt+5S1gS4u+9cIurw==
+"@advanced-rest-client/error-message@^3.0.0-preview.2":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/error-message/-/error-message-3.0.0.tgz#1206ad5108c92ff7c2fedaf9ad27b377b9885080"
+  integrity sha512-VeabgJLABLffAWRx28oGzFDnmBX8Chm9aO8MybwmAGj+vIxZAXsG9AoCCcL5LZi6FW9qFRtevMPfqIKD0mtALg==
   dependencies:
-    "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
-    "@polymer/iron-flex-layout" "^3.0.0"
+    "@advanced-rest-client/arc-icons" "^3.0.0"
     "@polymer/iron-icon" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    lit-element "^2.0.1"
 
-"@advanced-rest-client/events-target-mixin@^3.0.0-preview.1":
-  version "3.0.0-preview.2"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/events-target-mixin/-/events-target-mixin-3.0.0-preview.2.tgz#4de8c4edc57b9c27701ecdabab25e6918610dea3"
-  integrity sha512-wWpBh8wHWI53N6Npfmnn/NX3MIeKfAYWOAi2r+yAR8MHqCwEmtVAp0RxqNovFxbE1m1ok4QDOLvzz/HFCzyMoA==
-  dependencies:
-    "@polymer/polymer" "^3.0.0"
+"@advanced-rest-client/events-target-mixin@3.0.0", "@advanced-rest-client/events-target-mixin@^3.0.0", "@advanced-rest-client/events-target-mixin@^3.0.0-preview.1", "@advanced-rest-client/events-target-mixin@^3.0.0-preview.2", "@advanced-rest-client/events-target-mixin@^3.0.0-preview.3":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/events-target-mixin/-/events-target-mixin-3.0.0.tgz#589b425a587a91d2d78e3547cabdcec41ceb30e8"
+  integrity sha512-Mxxx2uzkNzT0F8+0IimqVb2AyQAu6NnaHAdQAQ9MoDu0p10hGDR27u+IqajKZ1//xK0uPL+DLylpZjGGF4+nLg==
 
 "@advanced-rest-client/files-payload-editor@^3.0.0-preview.1":
   version "3.0.0-preview.1"
@@ -155,46 +185,45 @@
     "@polymer/paper-input" "^3.0.0"
     "@polymer/polymer" "^3.0.0"
 
-"@advanced-rest-client/headers-list-view@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/headers-list-view/-/headers-list-view-3.0.0-preview.1.tgz#2d47c57f903de92881cef2e727282b730f187377"
-  integrity sha512-InuGmVE362DcjR1sXZ4CK2+ADNy5BkvaFBJz0y322Uq53/YPAQaDtUKpOlBtqAIuoLxXtF0+z7QTDiiYJv91rw==
+"@advanced-rest-client/headers-list-view@^3.0.0-preview.2":
+  version "3.0.0-preview.2"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/headers-list-view/-/headers-list-view-3.0.0-preview.2.tgz#f7d0ca4013b4268484d954364635d4260de891eb"
+  integrity sha512-mRRJ9fgYif5JWaWze6F9bXe+2RgzDrbwegra4dteVWrUR5BrF+r70hAP6InIeHE52NwXUmn2gsc8lD8dBAD3pA==
   dependencies:
     "@advanced-rest-client/headers-parser-mixin" "^3.0.0-preview.2"
     "@polymer/paper-button" "^3.0.0"
     "@polymer/paper-dialog" "^3.0.0"
     "@polymer/paper-dialog-scrollable" "^3.0.0"
     "@polymer/paper-item" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/polymer" "^3.2.0"
 
-"@advanced-rest-client/headers-parser-mixin@^3.0.0-preview.1", "@advanced-rest-client/headers-parser-mixin@^3.0.0-preview.2":
+"@advanced-rest-client/headers-parser-mixin@3.0.0-preview.2", "@advanced-rest-client/headers-parser-mixin@^3.0.0-preview.1", "@advanced-rest-client/headers-parser-mixin@^3.0.0-preview.2", "@advanced-rest-client/headers-parser-mixin@^3.0.0-preview.3":
   version "3.0.0-preview.2"
   resolved "https://registry.yarnpkg.com/@advanced-rest-client/headers-parser-mixin/-/headers-parser-mixin-3.0.0-preview.2.tgz#6fdd1285c60a5d02de9d74ece637d46a4fb9c12b"
   integrity sha512-7/ylETFRx56DM+NOr+i8Z1Oe1lHplnIW0tBARpTruR4KP3NDalOecqc1oQ7lACT1UC8uk2HXizoo2lSbDDOIMA==
   dependencies:
     "@polymer/polymer" "^3.0.0"
 
-"@advanced-rest-client/http-code-snippets@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/http-code-snippets/-/http-code-snippets-3.0.0-preview.1.tgz#173d9e1f303ad23b0a631b3a624f22c66f1a68ed"
-  integrity sha512-XHae3Uu8PXfJCd7sAl/V0kX16dKuJGENJfydmqD0r7IbBlM0hgVz7hGaFLlZsORDMUhWGh6fEQUY3RAuJ8T0nw==
+"@advanced-rest-client/http-code-snippets@^3.0.0-preview.2":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/http-code-snippets/-/http-code-snippets-3.0.0.tgz#cb420ad97c5d94f32455e15f5a85c748880f937f"
+  integrity sha512-W8Lr8hcPyfgoS+oneJpg4HomrlSzPsv/wazh/bf/5uwGtPvNEKHaKU0DqionrQ6x1QUn7iFcAb8dcAkcVVXjSQ==
   dependencies:
-    "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
-    "@polymer/iron-flex-layout" "^3.0.0"
+    "@advanced-rest-client/arc-icons" "^3.0.0"
     "@polymer/iron-icon" "^3.0.0"
     "@polymer/iron-pages" "^3.0.0"
     "@polymer/paper-icon-button" "^3.0.0"
-    "@polymer/paper-tabs" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/paper-tabs" "^3.1.0"
     "@polymer/prism-element" "^3.0.0"
+    lit-element "^2.0.1"
 
-"@advanced-rest-client/http-method-selector@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/http-method-selector/-/http-method-selector-3.0.0-preview.1.tgz#6a3dc8a56a0edfbf499ab98ccd2f892cb1c6f190"
-  integrity sha512-/JdBoAs7EByp199mCaThAMcJa8OtRhkLxmaVJGrvNHR0jS0JIFfdEmDmEdBmVERpJJlD8L3ti8pWWeJUXyYANg==
+"@advanced-rest-client/http-method-selector@^3.0.0-preview.2":
+  version "3.0.0-preview.2"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/http-method-selector/-/http-method-selector-3.0.0-preview.2.tgz#051f5f65c5d9c3339060baec7c3cd3ee95d554f6"
+  integrity sha512-4cFGxnz68+HvZQ0/1uqUaPS4js9ZMbbqF7bzqWy4FcfgXWNCZ1ejIxwLZEAgPwQMEp3ZSe8qk0rY4x0I4xojsw==
   dependencies:
-    "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
-    "@advanced-rest-client/events-target-mixin" "^3.0.0-preview.1"
+    "@advanced-rest-client/arc-icons" "^3.0.0-preview.2"
+    "@advanced-rest-client/events-target-mixin" "^3.0.0-preview.3"
     "@polymer/paper-dropdown-menu" "^3.0.0"
     "@polymer/paper-icon-button" "^3.0.0"
     "@polymer/paper-input" "^3.0.0"
@@ -202,52 +231,51 @@
     "@polymer/paper-listbox" "^3.0.0"
     "@polymer/paper-radio-button" "^3.0.0"
     "@polymer/paper-radio-group" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/polymer" "^3.2.0"
 
-"@advanced-rest-client/json-table@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/json-table/-/json-table-3.0.0-preview.1.tgz#6f95c41c45cdb5138b4695a5ab51bcf7416e1382"
-  integrity sha512-xLU+1DP/PrK5Cl+U9706jlUXN3/VdxXT8N9E+0dKRIo3bUah5uOwWLyIiaEFBnYnXpr8IyLriPlon4girXp+Nw==
+"@advanced-rest-client/json-table@^3.0.0-preview.2", "@advanced-rest-client/json-table@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/json-table/-/json-table-3.0.2.tgz#1379ff4b7e277305dfa00cfaa76d81b951023612"
+  integrity sha512-vt9CJS/bEldwPUqOx2rcbbwHTYk3X4Z8+GxwVTwuHu5bQUYgJjzQAZe+Gwt0Ht+6Xku7qdAWOfcRbdG5bh0N5A==
   dependencies:
-    "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
-    "@polymer/iron-flex-layout" "^3.0.0"
+    "@advanced-rest-client/arc-icons" "^3.0.0"
     "@polymer/paper-dropdown-menu" "^3.0.0"
     "@polymer/paper-icon-button" "^3.0.0"
     "@polymer/paper-item" "^3.0.0"
     "@polymer/paper-listbox" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/polymer" "^3.2.0"
 
-"@advanced-rest-client/json-viewer@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/json-viewer/-/json-viewer-3.0.0-preview.1.tgz#9eb4d288137bb1a78a68acec526a4d23cddc022d"
-  integrity sha512-m6TsnifewiVQUBFTAOfOlEpkROqrx2WXBQu7aUeBvrqsYBW7FNRrAwFsWUjf16opzppm0aDNTH+jevl6uk+oYw==
+"@advanced-rest-client/json-viewer@^3.0.0-preview.2":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/json-viewer/-/json-viewer-3.0.0.tgz#85dbcfe912efbc025febb71e765fe87cb0b258e9"
+  integrity sha512-OWrjnEYKTyOnIiG1roPF4BkFz2uIUhJ1CA/7N4Xy0bbCFqABiOgU/8aWOniJ9RtANho5P/Lna9LA3mzjji5n9w==
   dependencies:
     "@polymer/iron-collapse" "^3.0.0"
     "@polymer/iron-flex-layout" "^3.0.0"
     "@polymer/iron-test-helpers" "^3.0.0"
-    "@polymer/paper-spinner" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/paper-spinner" "^3.0.2"
+    "@polymer/polymer" "^3.2.0"
 
-"@advanced-rest-client/markdown-styles@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/markdown-styles/-/markdown-styles-3.0.0-preview.1.tgz#33c89ee71b6dc71b134eed729578a577db3d8a0e"
-  integrity sha512-fvNKdxdWEF44ribkElvfMO/6kHU1WoImQjyrmAUQ09s6PGdI+5a9KjBAzqGuq+SByjj5GalbPcsjeMETrrNpYA==
+"@advanced-rest-client/markdown-styles@3.1.0", "@advanced-rest-client/markdown-styles@^3.0.0-preview.1", "@advanced-rest-client/markdown-styles@^3.0.0-preview.2", "@advanced-rest-client/markdown-styles@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/markdown-styles/-/markdown-styles-3.1.0.tgz#8ec445b50bc38126d5c2556aeea0583e834e251a"
+  integrity sha512-k7Kb+ePx4E9fuk4YpTzpt0BOi3XFbYAW1tTXALj049CNU8MLUuEqFeR9zissr4GBSXbTYRQNo93hoINCCzsO3A==
   dependencies:
-    "@polymer/polymer" "^3.0.0"
+    lit-element "^2.0.1"
 
-"@advanced-rest-client/multipart-payload-editor@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/multipart-payload-editor/-/multipart-payload-editor-3.0.0-preview.1.tgz#d68bf6c046d69f042362cd0f6b527516eed48f97"
-  integrity sha512-mUq0vkAyB3QHNEW1qAVfeR2STA8G+ZDJBBBMblQ+/N35oukoiUJlKt+Jt3YdFnKS4PouWQojYuYNiYcxjWdPGQ==
+"@advanced-rest-client/multipart-payload-editor@^3.0.0-preview.2":
+  version "3.0.0-preview.2"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/multipart-payload-editor/-/multipart-payload-editor-3.0.0-preview.2.tgz#3e5218ce51401cc6d2227184357d59ff9cd6b181"
+  integrity sha512-lgRCRG2ioAkh7iqohKo453A5yBpEKGCmZrd7r+yrc1qD/0oDHaRPcMlEVByeLWBYmqgJlb3lJhti019zfwPW8w==
   dependencies:
-    "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
+    "@advanced-rest-client/arc-icons" "^3.0.0-preview.2"
+    "@advanced-rest-client/clipboard-copy" "^3.0.0-preview.1"
     "@advanced-rest-client/markdown-styles" "^3.0.0-preview.1"
     "@advanced-rest-client/multipart-payload-transformer" "^3.0.0-preview.1"
-    "@advanced-rest-client/paper-autocomplete" "^3.0.0-preview.1"
+    "@advanced-rest-client/paper-autocomplete" "^3.0.0-preview.2"
     "@api-components/api-form-mixin" "^3.0.0-preview.1"
     "@api-components/api-property-form-item" "^3.0.0-preview.1"
     "@api-components/api-view-model-transformer" "^3.0.0-preview.1"
-    "@api-components/clipboard-copy" "^3.0.0-preview.1"
     "@polymer/iron-collapse" "^3.0.0"
     "@polymer/iron-flex-layout" "^3.0.0"
     "@polymer/iron-form" "^3.0.0"
@@ -256,9 +284,9 @@
     "@polymer/paper-button" "^3.0.0"
     "@polymer/paper-icon-button" "^3.0.0"
     "@polymer/paper-input" "^3.0.0"
-    "@polymer/paper-spinner" "^3.0.0"
+    "@polymer/paper-spinner" "^3.0.2"
     "@polymer/paper-toast" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/polymer" "^3.2.0"
     "@polymer/prism-element" "^3.0.0"
 
 "@advanced-rest-client/multipart-payload-transformer@^3.0.0-preview.1":
@@ -268,23 +296,23 @@
   dependencies:
     "@polymer/polymer" "^3.0.0"
 
-"@advanced-rest-client/oauth-authorization@^3.0.0-preview.2":
-  version "3.0.0-preview.2"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/oauth-authorization/-/oauth-authorization-3.0.0-preview.2.tgz#1a82f792efb459b5dea01a35700f607f2df06884"
-  integrity sha512-6m4MXHpi1GVmxKtnja2Q9fwQ1risg22hbtCClNVGKs4/t1StMZ3BLGPGwQH8sTJPl67blljiqLmSFCbqjk3WWQ==
+"@advanced-rest-client/oauth-authorization@^3.0.0-preview.3":
+  version "3.0.0-preview.3"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/oauth-authorization/-/oauth-authorization-3.0.0-preview.3.tgz#df82dbff9ef6255982b9a2d81eaaa3a2efa17a5d"
+  integrity sha512-pxJCPq9uaaEk+Q6YouC/jsyKIWXXf4ksqDKpM0/aAAm/goV/dr5ZO4ul/GvIm4ppck36Z7FtdhBD8P4vx2C22g==
   dependencies:
     "@advanced-rest-client/headers-parser-mixin" "^3.0.0-preview.1"
     "@advanced-rest-client/url-parser" "^3.0.0-preview.1"
     "@polymer/iron-meta" "^3.0.0"
     "@polymer/polymer" "^3.0.0"
 
-"@advanced-rest-client/oauth2-scope-selector@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/oauth2-scope-selector/-/oauth2-scope-selector-3.0.0-preview.1.tgz#398a4ed959282cd330350a8827a89b2d25ec103d"
-  integrity sha512-Dl0UVfEBYpcVS/Sm6Fl8//emkabG0Ehp72zhBHHx5OEWocYmU9Ro7rFUlu2Kr6gdI9pWxWk93Fj+GCIZMZKJOg==
+"@advanced-rest-client/oauth2-scope-selector@^3.0.0-preview.3":
+  version "3.0.0-preview.3"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/oauth2-scope-selector/-/oauth2-scope-selector-3.0.0-preview.3.tgz#83bbf797a2ab8c80adaecfdf0f9a2c75206acf19"
+  integrity sha512-U2dWeLmYBaJfD9SLpONRsJQlrQwexCuF/bwelVXK9Qq+6PO0y8CLWplOhjydH0FYtr9OtGuFKZcrTUx+xO16pQ==
   dependencies:
     "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
-    "@advanced-rest-client/paper-autocomplete" "^3.0.0-preview.1"
+    "@advanced-rest-client/paper-autocomplete" "^3.0.0-preview.2"
     "@polymer/iron-behaviors" "^3.0.0"
     "@polymer/iron-flex-layout" "^3.0.0"
     "@polymer/iron-validatable-behavior" "^3.0.0"
@@ -293,7 +321,7 @@
     "@polymer/paper-toast" "^3.0.0"
     "@polymer/polymer" "^3.0.0"
 
-"@advanced-rest-client/paper-autocomplete@^3.0.0-preview.1":
+"@advanced-rest-client/paper-autocomplete@3.0.0-preview.1", "@advanced-rest-client/paper-autocomplete@^3.0.0-preview.1", "@advanced-rest-client/paper-autocomplete@^3.0.0-preview.2":
   version "3.0.0-preview.1"
   resolved "https://registry.yarnpkg.com/@advanced-rest-client/paper-autocomplete/-/paper-autocomplete-3.0.0-preview.1.tgz#4072c78b72b8b18b6b93d896cadf688c91c3e945"
   integrity sha512-rxvG25y7dfuP0q6+UDll6LT+lgglYh/NckcVa5D7dS7XkYZAlUvBtbQoRTLkGiWVs9/Zong9KQSIUbAZH8dcNQ==
@@ -318,17 +346,17 @@
     "@polymer/paper-input" "^3.0.0"
     "@polymer/polymer" "^3.0.0"
 
-"@advanced-rest-client/payload-parser-mixin@^3.0.0-preview.1":
+"@advanced-rest-client/payload-parser-mixin@3.0.0-preview.1", "@advanced-rest-client/payload-parser-mixin@^3.0.0-preview.1", "@advanced-rest-client/payload-parser-mixin@^3.0.0-preview.2":
   version "3.0.0-preview.1"
   resolved "https://registry.yarnpkg.com/@advanced-rest-client/payload-parser-mixin/-/payload-parser-mixin-3.0.0-preview.1.tgz#a9be6576428439b53c6d2ee9489e1074ffd808ba"
   integrity sha512-rBf3RyatI1DISMJommvvaTjQMrlxmRw9+wAwTwfk8SePwYGAnNaF7w9DsDL5y0++dm0MeNXtFJv65iQDLzbusw==
   dependencies:
     "@polymer/polymer" "^3.0.0"
 
-"@advanced-rest-client/prism-highlight@^4.0.0-preview.1":
-  version "4.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/prism-highlight/-/prism-highlight-4.0.0-preview.1.tgz#e765bb962ad61cca8106e0015cb618c07306c378"
-  integrity sha512-LWho+EDLOvheDVWo7U9hYU2SbZfGg2iTnZGzcY2bY0GrVqOgxmglCxYIT2r/lgOstSR1ZF2BghUezoSPzjuJqA==
+"@advanced-rest-client/prism-highlight@^4.0.0-preview.4":
+  version "4.0.0-preview.4"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/prism-highlight/-/prism-highlight-4.0.0-preview.4.tgz#668604a1e40207f517fd2c2610c884236c9525f6"
+  integrity sha512-5Y27LkXuE8qJ9zS99UGkHU5j+RIRJDg6vI9L9lERWojHJu7TK203UUjIKMbEOEO8Dal/PHztyGb4cqgOnPs/pg==
   dependencies:
     "@polymer/paper-button" "^3.0.0"
     "@polymer/paper-progress" "^3.0.0"
@@ -349,72 +377,71 @@
     "@polymer/paper-toast" "^3.0.0"
     "@polymer/polymer" "^3.0.0"
 
-"@advanced-rest-client/request-timings@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/request-timings/-/request-timings-3.0.0-preview.1.tgz#9a0774be0b31354bd737f0d5264e7b91095ed91f"
-  integrity sha512-IOBKOZaGeP4RHEWOxxP4z284USTXxlULurs+aoMhItyW/q6E30yOXR8CMqWYpHitevIKHeGlwkL42r1NbFM7nA==
+"@advanced-rest-client/request-timings@^3.0.0-preview.2":
+  version "3.0.0-preview.2"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/request-timings/-/request-timings-3.0.0-preview.2.tgz#5b7fc54730f469de3266c92a3fa3ed5b3d33d384"
+  integrity sha512-5YS7qZqeNXYN091BfWnU2PGjV6mWE0vETtCFgXswopd8PtY6VfKsD3au1T0OOeC5RsIJC1bC9m5MqZcwXuz8fA==
   dependencies:
     "@advanced-rest-client/date-time" "^3.0.0-preview.1"
     "@polymer/iron-flex-layout" "^3.0.0"
     "@polymer/paper-progress" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/polymer" "^3.2.0"
 
-"@advanced-rest-client/response-body-view@^3.0.0-preview.1":
-  version "3.0.0-preview.4"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/response-body-view/-/response-body-view-3.0.0-preview.4.tgz#f5af9df8b8a2cd2e02efc3153e171581574d47bb"
-  integrity sha512-AZ+PcvsNis01BtEI+2PyAnUqNPHJ0D0+7XQIHmOwGcP531cyOzFb4/g2Qwvn0bkorpg/aKEec6cWHMKcksEuEA==
+"@advanced-rest-client/response-body-view@^3.0.0-preview.7":
+  version "3.0.0-preview.7"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/response-body-view/-/response-body-view-3.0.0-preview.7.tgz#1b39af6f508a85c16fd3916777b280dd997c4a73"
+  integrity sha512-KxTqlzp4p5S02o6e8SMaOHIWjpFjEb6LW1ZsSTPBv6pWSsW9Si/RQ0yLasGAZyyLPJO9nyPXPMuFHK/vwFMjdQ==
   dependencies:
-    "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
-    "@advanced-rest-client/json-table" "^3.0.0-preview.1"
-    "@advanced-rest-client/json-viewer" "^3.0.0-preview.1"
-    "@advanced-rest-client/response-highlighter" "^3.0.0-preview.1"
-    "@advanced-rest-client/response-raw-viewer" "^3.0.0-preview.1"
-    "@advanced-rest-client/xml-viewer" "^3.0.0-preview.1"
-    "@api-components/clipboard-copy" "^3.0.0-preview.1"
+    "@advanced-rest-client/arc-icons" "^3.0.0-preview.2"
+    "@advanced-rest-client/clipboard-copy" "^3.0.0-preview.1"
+    "@advanced-rest-client/json-table" "^3.0.0-preview.2"
+    "@advanced-rest-client/json-viewer" "^3.0.0-preview.2"
+    "@advanced-rest-client/response-highlighter" "^3.0.0-preview.5"
+    "@advanced-rest-client/response-raw-viewer" "^3.0.0-preview.2"
+    "@advanced-rest-client/xml-viewer" "^3.0.0-preview.2"
     "@polymer/iron-pages" "^3.0.0"
     "@polymer/paper-dialog" "^3.0.0"
     "@polymer/paper-icon-button" "^3.0.0"
     "@polymer/paper-toast" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/polymer" "^3.2.0"
 
-"@advanced-rest-client/response-error-view@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/response-error-view/-/response-error-view-3.0.0-preview.1.tgz#4f4ceb251d4c4758013cad57995d764eb928e826"
-  integrity sha512-8pAObBjJnJ+RGMMoblKE6f40LcniMk60CmzjhwAMW4BB1E0ksGLE3BTzaWDMkJXkVjqT/McWvMjkJEeoRw+hgA==
+"@advanced-rest-client/response-error-view@^3.0.0-preview.2":
+  version "3.0.0-preview.2"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/response-error-view/-/response-error-view-3.0.0-preview.2.tgz#1a4ca2483cb280fe5b55e6dd40e1068b370f3e8e"
+  integrity sha512-t98nBRA9GOdTniZX8tgpR7Pj9943KKkzMxQh7p954YnakclUfATf6+bvne2IaZTvgF2ZO007FXYbVz8p1SUTHQ==
   dependencies:
-    "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
+    "@advanced-rest-client/arc-icons" "^3.0.0-preview.2"
     "@polymer/iron-flex-layout" "^3.0.0"
     "@polymer/iron-icon" "^3.0.0"
     "@polymer/iron-pages" "^3.0.0"
     "@polymer/paper-button" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/polymer" "^3.2.0"
 
-"@advanced-rest-client/response-highlighter@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/response-highlighter/-/response-highlighter-3.0.0-preview.1.tgz#eb1dfccb30bf33dcee384274cd14dcdf008c33e6"
-  integrity sha512-zF7uoLBmnxsOT2UU/z6FRAwqGdgeAAmuDJYqqnQpYV79LAlzrMu0yEHXivrs1HEsAO602OrtHbSOMcpPEgF+tA==
+"@advanced-rest-client/response-highlighter@^3.0.0-preview.5":
+  version "3.0.0-preview.5"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/response-highlighter/-/response-highlighter-3.0.0-preview.5.tgz#17b344d401bbcb041aae13a67c7af0dabc89b726"
+  integrity sha512-g3FtukL2rizpaaqT46bwF2NJFbpO26zxt+okmxRtd5qX8d7lTwBP92vrpDxgH0yFLlkfWrpYKEa5Bwr6CrJ4hA==
   dependencies:
-    "@advanced-rest-client/prism-highlight" "^4.0.0-preview.1"
+    "@advanced-rest-client/prism-highlight" "^4.0.0-preview.4"
+    "@polymer/polymer" "^3.2.0"
+
+"@advanced-rest-client/response-raw-viewer@^3.0.0-preview.2":
+  version "3.0.0-preview.2"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/response-raw-viewer/-/response-raw-viewer-3.0.0-preview.2.tgz#0b81d53fbf766369269789c6fd83e7326424093d"
+  integrity sha512-TCgrM/e0ID6rkcj90ujKRU2ubzoXBvFmXepN+yIEKt9E79wsZaA3DlitvkdHHDXCfSWcqE5KobsKQ8yzzHEJEw==
+  dependencies:
+    "@advanced-rest-client/payload-parser-mixin" "^3.0.0-preview.2"
     "@polymer/iron-flex-layout" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/polymer" "^3.2.0"
 
-"@advanced-rest-client/response-raw-viewer@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/response-raw-viewer/-/response-raw-viewer-3.0.0-preview.1.tgz#f182d6dc7351c452576d66a45e9e5b2dd5554b98"
-  integrity sha512-jPOWxvulZILI9PwbHBSrgb0qGhLTSW/y/PTC4O8rxkUEP2UjtaJUoHonkHV3UGgr8aIhCE3W9SVMKAxaWMOP4A==
+"@advanced-rest-client/response-status-view@^3.0.0-preview.2":
+  version "3.0.0-preview.2"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/response-status-view/-/response-status-view-3.0.0-preview.2.tgz#3f0a39edf112565552093214ccee313f13fbbd58"
+  integrity sha512-Xa3UM78UeFUbIClfiXNyu+t8KFqubGjgcO18d5SBI+rWFmta9gFHdWwqcgku1PTTJLbrC2sivGT3OQwSM63rjg==
   dependencies:
-    "@advanced-rest-client/payload-parser-mixin" "^3.0.0-preview.1"
-    "@polymer/iron-flex-layout" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
-
-"@advanced-rest-client/response-status-view@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/response-status-view/-/response-status-view-3.0.0-preview.1.tgz#5625f10fbeb4456a14887d3b9d0a8741fe0aea34"
-  integrity sha512-0ytM/080KHHWV08cp0gl/g9zCCMtrjGELm0Qb5YDdnMAgb0m8ono3CJ69hJDSDyouU5lCzwvhsph3cpBaY2sQw==
-  dependencies:
-    "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
-    "@advanced-rest-client/headers-list-view" "^3.0.0-preview.1"
-    "@advanced-rest-client/request-timings" "^3.0.0-preview.1"
+    "@advanced-rest-client/arc-icons" "^3.0.0-preview.2"
+    "@advanced-rest-client/headers-list-view" "^3.0.0-preview.2"
+    "@advanced-rest-client/request-timings" "^3.0.0-preview.2"
     "@polymer/iron-collapse" "^3.0.0"
     "@polymer/iron-flex-layout" "^3.0.0"
     "@polymer/iron-icon" "^3.0.0"
@@ -423,50 +450,48 @@
     "@polymer/paper-checkbox" "^3.0.0"
     "@polymer/paper-icon-button" "^3.0.0"
     "@polymer/paper-tabs" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/polymer" "^3.2.0"
 
-"@advanced-rest-client/response-view@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/response-view/-/response-view-3.0.0-preview.1.tgz#6e5be3c9289f9ce81266e9324a6661b285a8e872"
-  integrity sha512-qDs07RjFTRk8OtA1/ZxmnNjty3vRzBvuPI9jR3Kw4jj2Jja5JLVKTZHMo8Zbl0PGWhn3paJN6a15ztfBsd13Dg==
+"@advanced-rest-client/response-view@^3.0.0-preview.2":
+  version "3.0.0-preview.3"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/response-view/-/response-view-3.0.0-preview.3.tgz#a9a8891b998db6770c12748e4d943c892185c055"
+  integrity sha512-mXC6KFiGF7SaCHgHoY7QO4w3VDE6jqlfgJr0NYD12Zru95Gx40zIemtWM40ivHUtf7yiLTsQIoxV3LotmPF0hg==
   dependencies:
-    "@advanced-rest-client/response-body-view" "^3.0.0-preview.1"
-    "@advanced-rest-client/response-error-view" "^3.0.0-preview.1"
-    "@advanced-rest-client/response-status-view" "^3.0.0-preview.1"
-    "@polymer/polymer" "^3.0.0"
+    "@advanced-rest-client/response-body-view" "^3.0.0-preview.7"
+    "@advanced-rest-client/response-error-view" "^3.0.0-preview.2"
+    "@advanced-rest-client/response-status-view" "^3.0.0-preview.2"
+    "@polymer/polymer" "^3.2.0"
 
 "@advanced-rest-client/url-parser@^3.0.0-preview.1":
   version "3.0.0-preview.2"
   resolved "https://registry.yarnpkg.com/@advanced-rest-client/url-parser/-/url-parser-3.0.0-preview.2.tgz#5f2ba22347ce19ec25c6f3630ec5dd2bb38cd0d3"
   integrity sha512-eZJnkJEq+5aaOkifRgK4y1uYBEolFI8J431EQoZPgeJfk/bw6vfU5SKZfZOC5nMY9I4TLtPH4Vy/iJVpv/uWeg==
 
-"@advanced-rest-client/uuid-generator@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/uuid-generator/-/uuid-generator-3.0.0-preview.1.tgz#3316d671cc0bebadcf9c19f5d6fe7f0be0020a4d"
-  integrity sha512-liK7DgMAEeOHGJzfpcZP18WjfxCAGMOrKXKLOlxknGKa1s7FgL0KPE8wvcIpQWcGmvGThdWGCyTRSiLB5OL0+Q==
-  dependencies:
-    "@polymer/polymer" "^3.0.0"
+"@advanced-rest-client/uuid-generator@^3.0.0-preview.2":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/uuid-generator/-/uuid-generator-3.0.1.tgz#c0a97b719dd2a101927dee98485a658ecf217c6b"
+  integrity sha512-VdDQ1mxwWBo2eC05vpU4I0VxqcdOI1T7iTp5y1rpViZelkU0rxxh43K2JFIHoQyPrNjaJYO0wuKK/VxWGDRPyA==
 
-"@advanced-rest-client/xhr-simple-request@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/xhr-simple-request/-/xhr-simple-request-3.0.0-preview.1.tgz#fc2dc5346d1d5f21bb578595447bf6a100089cf6"
-  integrity sha512-UGK8+N9nkibEp9gsGgNJXzkob3XAd5eg8Vx4binJWqXxQFsw5YJtBqsj1mx5iQaydJ9qcB8UZx/uyhJoQoZlOg==
+"@advanced-rest-client/xhr-simple-request@^3.0.0-preview.2":
+  version "3.0.0-preview.2"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/xhr-simple-request/-/xhr-simple-request-3.0.0-preview.2.tgz#49451058d485b0a1a1d13930bb66256ad418dadf"
+  integrity sha512-Tl8n/qx7P12D507cdWBxEIQbAzE1Cvc037rbZaiAgLmkXq8iM62JZhqRmS2/Ji7vfSCmnnULY2o54+VpVWZzWQ==
   dependencies:
-    "@advanced-rest-client/events-target-mixin" "^3.0.0-preview.1"
-    "@advanced-rest-client/headers-parser-mixin" "^3.0.0-preview.2"
-    "@polymer/polymer" "^3.0.0"
+    "@advanced-rest-client/events-target-mixin" "^3.0.0-preview.3"
+    "@advanced-rest-client/headers-parser-mixin" "^3.0.0-preview.3"
+    "@polymer/polymer" "^3.2.0"
 
-"@advanced-rest-client/xml-viewer@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@advanced-rest-client/xml-viewer/-/xml-viewer-3.0.0-preview.1.tgz#a7d153317299199415630c970b822f6e0513f184"
-  integrity sha512-tBdf68r36i5qUeWio3KbfFotMJkHwFQ5lON31ztqPbGzDs2vHfGGsmauom5kYpc9z+XGkTPQwhBJ7uKu6KYEtg==
+"@advanced-rest-client/xml-viewer@^3.0.0-preview.2":
+  version "3.0.0-preview.2"
+  resolved "https://registry.yarnpkg.com/@advanced-rest-client/xml-viewer/-/xml-viewer-3.0.0-preview.2.tgz#4a782ae1f01f085471196c23a21b653086115855"
+  integrity sha512-zzm29shdD/jcWRA564WKjbSMNzn/wXD55xOSUAGErEvWCSyKtzpphTJqgh7Xq6SH8v3+uZG8CsWBrXdfl/q7Zw==
   dependencies:
-    "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
-    "@advanced-rest-client/error-message" "^3.0.0-preview.1"
+    "@advanced-rest-client/arc-icons" "^3.0.0-preview.2"
+    "@advanced-rest-client/error-message" "^3.0.0-preview.2"
     "@polymer/iron-flex-layout" "^3.0.0"
     "@polymer/iron-icon" "^3.0.0"
-    "@polymer/paper-spinner" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/paper-spinner" "^3.0.2"
+    "@polymer/polymer" "^3.2.0"
 
 "@anypoint-components/anypoint-behaviors@github:anypoint-components/anypoint-behaviors#3.0.0-preview":
   version "3.0.0-preview.1"
@@ -475,7 +500,7 @@
     "@advanced-rest-client/anypoint-styles" "^3.0.0-preview.2"
     "@polymer/polymer" "^3.0.0"
 
-"@api-components/amf-helper-mixin@^3.0.0-preview.1":
+"@api-components/amf-helper-mixin@3.0.0-preview.1", "@api-components/amf-helper-mixin@^3.0.0", "@api-components/amf-helper-mixin@^3.0.0-preview.1", "@api-components/amf-helper-mixin@^3.0.1":
   version "3.0.0-preview.1"
   resolved "https://registry.yarnpkg.com/@api-components/amf-helper-mixin/-/amf-helper-mixin-3.0.0-preview.1.tgz#39d97a2593c270236e2bad5dc88bce000c430463"
   integrity sha512-NPRZzo1YyX6Yrk0DGltl8I54Zr3OpxLcOhSPfkEMvOkpsskLN10eSlLng5kkiT2mABY4pSZpWQKw+kMMu0nP1w==
@@ -483,61 +508,57 @@
     "@polymer/iron-meta" "^3.0.0"
     "@polymer/polymer" "^3.0.0"
 
-"@api-components/api-annotation-document@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-annotation-document/-/api-annotation-document-3.0.0-preview.1.tgz#393e9e4cd9ca3f4c396a510c5fa01a4cf87866b5"
-  integrity sha512-1BQVLKodewjXhXhYR2YWa6zZLTuOboCgqnweq4k+docK70abzBUbD3birK5Mqmm0N07p/i27LOwb5Y6CUwAT5g==
+"@api-components/api-annotation-document@^3.0.0", "@api-components/api-annotation-document@^3.0.0-preview.2":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@api-components/api-annotation-document/-/api-annotation-document-3.0.0.tgz#fe5592315187f106029b4140fb829d7bc75f33c3"
+  integrity sha512-X5FCQgFZkOEGdVzCbJZJTCsbzedqYCdlt4K7gmqi6e6j06k3lbxpWXUaYGZu4l1HzxmDhrGPGfXfrXzK6URbBg==
   dependencies:
-    "@api-components/amf-helper-mixin" "^3.0.0-preview.1"
-    "@api-components/api-console-default-theme" "^3.0.0-preview.1"
-    "@api-components/api-navigation" "^3.0.0-preview.1"
-    "@polymer/polymer" "^3.0.0"
+    "@api-components/amf-helper-mixin" "^3.0.0"
+    lit-element "^2.1.0"
+    lit-html "^1.0.0"
 
-"@api-components/api-body-document@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-body-document/-/api-body-document-3.0.0-preview.1.tgz#fbc645d9f86cbeb856e858600dc2ac2dd43940fb"
-  integrity sha512-YJQaKxf9k4iABEwbWjjvVtbiSwwc5UQEZaOyIqXQ+nufe5jAaBKMRDvGBOaU+QDfHqK97zHtr1ZnTbjVqG+Rng==
+"@api-components/api-body-document@^3.0.0-preview.2", "@api-components/api-body-document@^3.0.0-preview.3":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@api-components/api-body-document/-/api-body-document-3.0.0.tgz#15f45eedc68acbabe3386f4419a599f1b153662d"
+  integrity sha512-6J8sX74V1FcZ27PHUjy5ms4KEhj131Ldh3tDn6uWz+mfU5Z67fjMczXkeiTH20aMZQYttVD4QftTmfwNTeJq6Q==
   dependencies:
-    "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
-    "@advanced-rest-client/markdown-styles" "^3.0.0-preview.1"
-    "@api-components/amf-helper-mixin" "^3.0.0-preview.1"
-    "@api-components/api-console-default-theme" "^3.0.0-preview.1"
-    "@api-components/api-navigation" "^3.0.0-preview.1"
-    "@api-components/api-resource-example-document" "^3.0.0-preview.1"
-    "@api-components/api-schema-document" "^3.0.0-preview.1"
-    "@api-components/api-type-document" "^3.0.0-preview.1"
-    "@api-components/raml-aware" "^3.0.0-preview.1"
+    "@advanced-rest-client/arc-icons" "^3.0.0"
+    "@advanced-rest-client/arc-marked" "^1.0.0"
+    "@advanced-rest-client/markdown-styles" "^3.1.0"
+    "@api-components/amf-helper-mixin" "^3.0.1"
+    "@api-components/api-resource-example-document" "^3.0.2"
+    "@api-components/api-schema-document" "^3.0.0"
+    "@api-components/api-type-document" "^3.0.0"
+    "@api-components/raml-aware" "^3.0.0"
     "@polymer/iron-collapse" "^3.0.0"
-    "@polymer/iron-flex-layout" "^3.0.0"
     "@polymer/iron-icon" "^3.0.0"
-    "@polymer/marked-element" "^3.0.0"
     "@polymer/paper-button" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    lit-element "^2.0.1"
 
-"@api-components/api-body-editor@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-body-editor/-/api-body-editor-3.0.0-preview.1.tgz#727e8d638fba848bc1b36c5bbe492ce809834d44"
-  integrity sha512-tfWsKQpP4bh9Uj89/Tc74USEXqSUHstrZYQ3DcNJvE75uNzcbxH5ea2ijQuck0xhCBATYwRk3G6m5Dkg3yogbw==
+"@api-components/api-body-editor@^3.0.0-preview.2":
+  version "3.0.0-preview.2"
+  resolved "https://registry.yarnpkg.com/@api-components/api-body-editor/-/api-body-editor-3.0.0-preview.2.tgz#3a8dba956b306fd6fda584bd2d53a779ef65e664"
+  integrity sha512-BV0w/7Vl/oKy5cI8mvg4SWzR7PBnzzoo0KEudQDvbAeVOunszjQ8WLhTDNZF403qIsIDfFxgTfqAMka+8HIL5w==
   dependencies:
-    "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
+    "@advanced-rest-client/arc-icons" "^3.0.0-preview.2"
+    "@advanced-rest-client/clipboard-copy" "^3.0.0-preview.1"
     "@advanced-rest-client/content-type-selector" "^3.0.0-preview.1"
-    "@advanced-rest-client/events-target-mixin" "^3.0.0-preview.1"
+    "@advanced-rest-client/events-target-mixin" "^3.0.0-preview.2"
     "@advanced-rest-client/files-payload-editor" "^3.0.0-preview.1"
     "@advanced-rest-client/form-data-editor" "^3.0.0-preview.1"
-    "@advanced-rest-client/multipart-payload-editor" "^3.0.0-preview.1"
+    "@advanced-rest-client/multipart-payload-editor" "^3.0.0-preview.2"
     "@advanced-rest-client/raw-payload-editor" "^3.0.0-preview.2"
     "@api-components/amf-helper-mixin" "^3.0.0-preview.1"
-    "@api-components/api-example-generator" "^3.0.0-preview.2"
+    "@api-components/api-example-generator" "^3.0.0-preview.4"
     "@api-components/api-form-mixin" "^3.0.0-preview.1"
     "@api-components/api-view-model-transformer" "^3.0.0-preview.1"
-    "@api-components/clipboard-copy" "^3.0.0-preview.1"
     "@api-components/raml-aware" "^3.0.0-preview.1"
     "@polymer/iron-flex-layout" "^3.0.0"
     "@polymer/paper-dropdown-menu" "^3.0.0"
     "@polymer/paper-icon-button" "^3.0.0"
     "@polymer/paper-item" "^3.0.0"
     "@polymer/paper-listbox" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/polymer" "^3.2.0"
 
 "@api-components/api-console-default-theme@^3.0.0-preview.1":
   version "3.0.0-preview.1"
@@ -547,102 +568,102 @@
     "@polymer/paper-styles" "^3.0.0"
     "@polymer/polymer" "^3.0.0"
 
-"@api-components/api-documentation-document@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-documentation-document/-/api-documentation-document-3.0.0-preview.1.tgz#d7524130eff1accb5ce9b98a92a18f512a25fb36"
-  integrity sha512-5UEs33RG7p95LwA5FQMV+db/LcMPmPms5bgot27P3J9uv7Vp6rdqLSfoGVln4CPRnlkvCXBZIvUqwt2kxkmI8g==
+"@api-components/api-documentation-document@^3.0.0-preview.2":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@api-components/api-documentation-document/-/api-documentation-document-3.0.0.tgz#44dfbe857a1d0ebcee08dc04eb5ee79e76f9e50b"
+  integrity sha512-pqaqiv6SDiW13QJQOynSex/mp8g2WzkThIDi3ZKuFhP0wOcGejIBX5z+VR8fZrpk5saeRZjVLWnmqXzegWzp0Q==
   dependencies:
-    "@advanced-rest-client/markdown-styles" "^3.0.0-preview.1"
-    "@api-components/amf-helper-mixin" "^3.0.0-preview.1"
-    "@polymer/marked-element" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@advanced-rest-client/arc-marked" "^1.0.0"
+    "@advanced-rest-client/markdown-styles" "^3.1.0"
+    "@api-components/amf-helper-mixin" "^3.0.1"
+    lit-element "^2.0.1"
 
-"@api-components/api-documentation@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-documentation/-/api-documentation-3.0.0-preview.1.tgz#fb748769a456b6803917a4abf0b7dffadf79860b"
-  integrity sha512-idnw+bPtBKxgGTkO9N/WAxnTAa70AOcCamjeakeFF9QXXwEclAnseBrmmRcUVc7st3gcW40k3yFWEitOpgR+hg==
+"@api-components/api-documentation@3.0.0-preview.6":
+  version "3.0.0-preview.6"
+  resolved "https://registry.yarnpkg.com/@api-components/api-documentation/-/api-documentation-3.0.0-preview.6.tgz#f4e579b285e11c889ca93d175dce4b1eafdccc61"
+  integrity sha512-nXskldv3X3NzdqyOM+BwIR55rNb6+Ja9hOOgNsfeuoi9M5tP5Ct7ih/jsFO0Xv+HZstfFOBDgcg96C7CeMC4Sg==
   dependencies:
     "@api-components/amf-helper-mixin" "^3.0.0-preview.1"
-    "@api-components/api-documentation-document" "^3.0.0-preview.1"
-    "@api-components/api-endpoint-documentation" "^3.0.0-preview.1"
-    "@api-components/api-method-documentation" "^3.0.0-preview.1"
-    "@api-components/api-security-documentation" "^3.0.0-preview.1"
-    "@api-components/api-summary" "^3.0.0-preview.1"
-    "@api-components/api-type-documentation" "^3.0.0-preview.1"
-    "@api-components/raml-aware" "^3.0.0-preview.1"
-    "@polymer/polymer" "^3.0.0"
+    "@api-components/api-documentation-document" "^3.0.0-preview.2"
+    "@api-components/api-endpoint-documentation" "^3.0.0-preview.3"
+    "@api-components/api-method-documentation" "^3.0.0-preview.3"
+    "@api-components/api-security-documentation" "^3.0.0-preview.2"
+    "@api-components/api-summary" "^3.0.0-preview.3"
+    "@api-components/api-type-documentation" "^3.0.0-preview.2"
+    "@api-components/raml-aware" "^3.0.0-preview.2"
+    "@polymer/polymer" "^3.2.0"
 
-"@api-components/api-endpoint-documentation@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-endpoint-documentation/-/api-endpoint-documentation-3.0.0-preview.1.tgz#41f9e9b3139df25e0c34cb3ba740ca7ee4aa2587"
-  integrity sha512-twma3iylqEKq7T8SS5br82QjXmplNZ8kL+L/mXLf3NI46gKR/X+U7ADi58u4IYKB2YbDjwcmh2r3S5qZsHgRUA==
+"@api-components/api-endpoint-documentation@^3.0.0-preview.3":
+  version "3.0.0-preview.3"
+  resolved "https://registry.yarnpkg.com/@api-components/api-endpoint-documentation/-/api-endpoint-documentation-3.0.0-preview.3.tgz#d2209e1905a7563d7d9bef20591738a8d1e90ff9"
+  integrity sha512-xUGDnW+D1EpYcuIYmnY3aTviF3fRSqTmb1XZGw1rtlICQSWkOuHtCoK6mvJEtloY2PRNw461+529lFVHYLRleQ==
   dependencies:
-    "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
-    "@advanced-rest-client/http-code-snippets" "^3.0.0-preview.1"
-    "@advanced-rest-client/markdown-styles" "^3.0.0-preview.1"
+    "@advanced-rest-client/arc-icons" "^3.0.0-preview.2"
+    "@advanced-rest-client/clipboard-copy" "^3.0.0-preview.1"
+    "@advanced-rest-client/http-code-snippets" "^3.0.0-preview.2"
+    "@advanced-rest-client/markdown-styles" "^3.0.0-preview.2"
     "@api-components/amf-helper-mixin" "^3.0.0-preview.1"
-    "@api-components/api-annotation-document" "^3.0.0-preview.1"
-    "@api-components/api-example-generator" "^3.0.0-preview.2"
-    "@api-components/api-method-documentation" "^3.0.0-preview.1"
-    "@api-components/api-parameters-document" "^3.0.0-preview.1"
-    "@api-components/api-request-panel" "^3.0.0-preview.1"
-    "@api-components/clipboard-copy" "^3.0.0-preview.1"
-    "@api-components/http-method-label" "^3.0.0-preview.1"
-    "@api-components/raml-aware" "^3.0.0-preview.1"
+    "@api-components/api-annotation-document" "^3.0.0-preview.2"
+    "@api-components/api-example-generator" "^3.0.0-preview.4"
+    "@api-components/api-method-documentation" "^3.0.0-preview.2"
+    "@api-components/api-parameters-document" "^3.0.0-preview.2"
+    "@api-components/api-request-panel" "^3.0.0-preview.2"
+    "@api-components/http-method-label" "^3.0.0-preview.2"
+    "@api-components/raml-aware" "^3.0.0-preview.2"
     "@polymer/iron-collapse" "^3.0.0"
     "@polymer/iron-flex-layout" "^3.0.0"
     "@polymer/marked-element" "^3.0.0"
     "@polymer/paper-icon-button" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/polymer" "^3.2.0"
 
-"@api-components/api-example-generator@^3.0.0-preview.1", "@api-components/api-example-generator@^3.0.0-preview.2":
-  version "3.0.0-preview.2"
-  resolved "https://registry.yarnpkg.com/@api-components/api-example-generator/-/api-example-generator-3.0.0-preview.2.tgz#2de911ea8a464328fad985b11fb3e7e049c9038c"
-  integrity sha512-GmiM5xI4sV1CwNd1Rx2yOzErngTVp7Trzj9ri3Zs2Zjl/TuPF/8PDaQkck/Gx969epJ0MwSZgIOIG4Yssjycqg==
+"@api-components/api-example-generator@3.0.2", "@api-components/api-example-generator@^3.0.0-preview.2", "@api-components/api-example-generator@^3.0.0-preview.4", "@api-components/api-example-generator@^3.0.0-preview.5", "@api-components/api-example-generator@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@api-components/api-example-generator/-/api-example-generator-3.0.2.tgz#5f2e4bf94316ac5732089c7e9102ac214f27bafd"
+  integrity sha512-U0sHW/Yj3G3lRX8Adcz883KIhUBW1WMdu0fhndFZ6V1Tj97ovJLBBZnAOzDQ/Ct7vwrMTzV3f8FAFk9GYrTkGA==
   dependencies:
-    "@polymer/polymer" "^3.0.0"
+    "@api-components/amf-helper-mixin" "^3.0.1"
+    lit-element "^2.0.1"
 
-"@api-components/api-form-mixin@^3.0.0-preview.1":
+"@api-components/api-form-mixin@3.0.0-preview.1", "@api-components/api-form-mixin@^3.0.0-preview.1", "@api-components/api-form-mixin@^3.0.0-preview.2":
   version "3.0.0-preview.1"
   resolved "https://registry.yarnpkg.com/@api-components/api-form-mixin/-/api-form-mixin-3.0.0-preview.1.tgz#599e570d965e8c9cfdf031a1c102e05bf5bfbf36"
   integrity sha512-xBg3GFnHWztOKuxvLglPqfm65MNNaEAaZPJVfmnu/fK72QQGjkNW63P19JOpgOAiq4m5QlHP0ESv6wjT+U7HIg==
   dependencies:
     "@polymer/polymer" "^3.0.0"
 
-"@api-components/api-headers-document@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-headers-document/-/api-headers-document-3.0.0-preview.1.tgz#7062d7c1bbfc8c850bb4f62d8d5165f07ec2b86f"
-  integrity sha512-Wn9p/1q6aEiZrEXtQ85f4jrbXo+6hM+7yqo0neUq6TSa/bp1yBfENnDAVEofaJaHxfjE1wgsei7MOxAZX1xkWA==
+"@api-components/api-headers-document@^3.0.0-preview.2":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@api-components/api-headers-document/-/api-headers-document-3.0.0.tgz#277d40c8a28d943d0419e600d3bad5b79d03ab66"
+  integrity sha512-9J+cZ0yanxaOFSy3JwRx4SWoTFbEqpE4CTvWUaxSM/RdoQ8QEgkf4BtdotfPIb/EgRj9X7fmjTpzPf/pEliYrA==
   dependencies:
-    "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
-    "@api-components/api-type-document" "^3.0.0-preview.1"
-    "@api-components/raml-aware" "^3.0.0-preview.1"
+    "@advanced-rest-client/arc-icons" "^3.0.0"
+    "@api-components/api-type-document" "^3.0.0"
+    "@api-components/raml-aware" "^3.0.0"
     "@polymer/iron-collapse" "^3.0.0"
-    "@polymer/iron-flex-layout" "^3.0.0"
     "@polymer/iron-icon" "^3.0.0"
     "@polymer/paper-button" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    lit-element "^2.0.1"
 
-"@api-components/api-headers-editor@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-headers-editor/-/api-headers-editor-3.0.0-preview.1.tgz#921533c80825b8a2cc1db6f2712c70064e082acb"
-  integrity sha512-8uj0m1MtFG8GrRe2RNyqnJfNjpHDZ+wEaPN1dJF8u4dv3XuG/SeBjq4ve7lcERzLdLqG9LlRIjT6JRCVXr68pw==
+"@api-components/api-headers-editor@^3.0.0-preview.3":
+  version "3.0.0-preview.3"
+  resolved "https://registry.yarnpkg.com/@api-components/api-headers-editor/-/api-headers-editor-3.0.0-preview.3.tgz#f4c9e586c7d898f849b483ccee54adb7281979e9"
+  integrity sha512-sB7AZNtmxiOXlp1idu+pJPZYaPhJv3lICBo8Zc64r1iEOYeP6C1QLCwoM2kgHkt+tG6ZDSn1F8taG4UM5XC27g==
   dependencies:
-    "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
+    "@advanced-rest-client/arc-icons" "^3.0.0-preview.2"
+    "@advanced-rest-client/clipboard-copy" "^3.0.0-preview.1"
     "@advanced-rest-client/code-mirror" "^3.0.0-preview.1"
     "@advanced-rest-client/code-mirror-hint" "^3.0.0-preview.1"
-    "@advanced-rest-client/events-target-mixin" "^3.0.0-preview.1"
+    "@advanced-rest-client/events-target-mixin" "^3.0.0-preview.2"
     "@advanced-rest-client/headers-parser-mixin" "^3.0.0-preview.2"
     "@api-components/amf-helper-mixin" "^3.0.0-preview.1"
     "@api-components/api-form-mixin" "^3.0.0-preview.1"
     "@api-components/api-headers-form" "^3.0.0-preview.1"
     "@api-components/api-view-model-transformer" "^3.0.0-preview.1"
-    "@api-components/clipboard-copy" "^3.0.0-preview.1"
     "@api-components/raml-aware" "^3.0.0-preview.1"
     "@polymer/iron-flex-layout" "^3.0.0"
     "@polymer/iron-validatable-behavior" "^3.0.0"
     "@polymer/paper-icon-button" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/polymer" "^3.2.0"
 
 "@api-components/api-headers-form@^3.0.0-preview.1":
   version "3.0.0-preview.1"
@@ -670,37 +691,37 @@
     "@polymer/paper-tooltip" "^3.0.0"
     "@polymer/polymer" "^3.0.0"
 
-"@api-components/api-method-documentation@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-method-documentation/-/api-method-documentation-3.0.0-preview.1.tgz#4ae3d891f343b4d4561f125d951801fbe301ed19"
-  integrity sha512-LNw5G0lTzSnkL8woSomHWQnJnQ5AwVr2dXR2tBuCoDVuXaPtgPC+sjO1FnFS1QXW/qJkSidGIsY3vwa2FGgiiQ==
+"@api-components/api-method-documentation@^3.0.0-preview.2", "@api-components/api-method-documentation@^3.0.0-preview.3":
+  version "3.0.0-preview.4"
+  resolved "https://registry.yarnpkg.com/@api-components/api-method-documentation/-/api-method-documentation-3.0.0-preview.4.tgz#e4488171666d85bb15a895a5665f8f148f1bd909"
+  integrity sha512-G+tEDkyC3KKfpNuk8eJtOP3+0+2GV4uC8dipsMeNtUJqPp5mwPA1BQwK0ZO4IgUNJmywmP2NlPRm/x8c846rsA==
   dependencies:
-    "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
-    "@advanced-rest-client/http-code-snippets" "^3.0.0-preview.1"
-    "@advanced-rest-client/markdown-styles" "^3.0.0-preview.1"
+    "@advanced-rest-client/arc-icons" "^3.0.0-preview.2"
+    "@advanced-rest-client/clipboard-copy" "^3.0.0-preview.1"
+    "@advanced-rest-client/http-code-snippets" "^3.0.0-preview.2"
+    "@advanced-rest-client/markdown-styles" "^3.0.0-preview.2"
     "@api-components/amf-helper-mixin" "^3.0.0-preview.1"
-    "@api-components/api-annotation-document" "^3.0.0-preview.1"
-    "@api-components/api-body-document" "^3.0.0-preview.1"
-    "@api-components/api-example-generator" "^3.0.0-preview.2"
-    "@api-components/api-headers-document" "^3.0.0-preview.1"
-    "@api-components/api-parameters-document" "^3.0.0-preview.1"
-    "@api-components/api-responses-document" "^3.0.0-preview.1"
-    "@api-components/api-security-documentation" "^3.0.0-preview.1"
-    "@api-components/clipboard-copy" "^3.0.0-preview.1"
-    "@api-components/http-method-label" "^3.0.0-preview.1"
-    "@api-components/raml-aware" "^3.0.0-preview.1"
+    "@api-components/api-annotation-document" "^3.0.0-preview.2"
+    "@api-components/api-body-document" "^3.0.0-preview.3"
+    "@api-components/api-example-generator" "^3.0.0-preview.5"
+    "@api-components/api-headers-document" "^3.0.0-preview.2"
+    "@api-components/api-parameters-document" "^3.0.0-preview.2"
+    "@api-components/api-responses-document" "^3.0.0-preview.2"
+    "@api-components/api-security-documentation" "^3.0.0-preview.2"
+    "@api-components/http-method-label" "^3.0.0-preview.2"
+    "@api-components/raml-aware" "^3.0.0-preview.2"
     "@polymer/iron-collapse" "^3.0.0"
     "@polymer/iron-flex-layout" "^3.0.0"
     "@polymer/iron-icon" "^3.0.0"
     "@polymer/marked-element" "^3.0.0"
     "@polymer/paper-button" "^3.0.0"
     "@polymer/paper-icon-button" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/polymer" "^3.2.0"
 
-"@api-components/api-navigation@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-navigation/-/api-navigation-3.0.0-preview.1.tgz#aec89a32e9944325dae019a34ac1d3ce39037279"
-  integrity sha512-PL26JfDFKRt/eXmOfTShIrL+CWYy+Sb3nzVxNmlwlilMh/SGLZ40/XjWa2DpQj2ejyVCPzWmoscUMi4SF1Eb/A==
+"@api-components/api-navigation@3.0.0-preview.2":
+  version "3.0.0-preview.2"
+  resolved "https://registry.yarnpkg.com/@api-components/api-navigation/-/api-navigation-3.0.0-preview.2.tgz#da36d622d9c47456bc9204bfbe365e1d4a14f6ba"
+  integrity sha512-/SG7A/yScRSAdRGdSPRsH3zke01Y0r5Vzy2BjYiMbI9rCKFnDzgf/cVnjRr9fRGio8eiKfhaSeFcbf2VQ6PmVA==
   dependencies:
     "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
     "@api-components/amf-helper-mixin" "^3.0.0-preview.1"
@@ -712,21 +733,20 @@
     "@polymer/paper-item" "^3.0.0"
     "@polymer/polymer" "^3.0.0"
 
-"@api-components/api-parameters-document@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-parameters-document/-/api-parameters-document-3.0.0-preview.1.tgz#2005a1baaf704144f4982a503ee2382eb3e09d86"
-  integrity sha512-9+O2e/N64eHlFxZlcMXjwrrw5FYWndpdNTJfVm4ZalYpgZsMotEPzvCZJh3jwldW9X2E2hcHEJdIXUBg8kSmBg==
+"@api-components/api-parameters-document@^3.0.0-preview.2":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@api-components/api-parameters-document/-/api-parameters-document-3.0.0.tgz#3a5c7087727905ee20d690e5ca19360ae77729f2"
+  integrity sha512-mRaybLTbrQRCoNIT3+oJlc4QSbimaX7h9cjQ3zjUqv6PNws0q1DxKkWu7EKKtzXH8k3juEcG7L9QbeO6JdDB7A==
   dependencies:
-    "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
-    "@api-components/api-type-document" "^3.0.0-preview.1"
-    "@api-components/raml-aware" "^3.0.0-preview.1"
+    "@advanced-rest-client/arc-icons" "^3.0.0"
+    "@api-components/api-type-document" "^3.0.0"
+    "@api-components/raml-aware" "^3.0.0"
     "@polymer/iron-collapse" "^3.0.0"
-    "@polymer/iron-flex-layout" "^3.0.0"
     "@polymer/iron-icon" "^3.0.0"
     "@polymer/paper-button" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    lit-element "^2.0.1"
 
-"@api-components/api-property-form-item@^3.0.0-preview.1":
+"@api-components/api-property-form-item@3.0.0-preview.1", "@api-components/api-property-form-item@^3.0.0-preview.1", "@api-components/api-property-form-item@^3.0.0-preview.2":
   version "3.0.0-preview.1"
   resolved "https://registry.yarnpkg.com/@api-components/api-property-form-item/-/api-property-form-item-3.0.0-preview.1.tgz#db7f5e47bd2891b284f16baee0fc8d7569d1f357"
   integrity sha512-csxp1Enegr5kl6KHPW4+lU4W+oL+xyJmcf0z9nyNdaNJ4JJVmuMXBWD+Bh6j0NH1FUPVTQXczbj3m6rflerELQ==
@@ -744,170 +764,164 @@
     "@polymer/paper-listbox" "^3.0.0"
     "@polymer/polymer" "^3.0.0"
 
-"@api-components/api-request-editor@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-request-editor/-/api-request-editor-3.0.0-preview.1.tgz#d13c99ffc6fc5851d76882f1be3aa7144549cfdf"
-  integrity sha512-YJbm0CvquWGQakGYl2+S9U3GFkr8MJVDRGxC4cd3JJGkDav0juN4dRhzx99Pd+9jF9OhipB3ultR0GVCZlnqVg==
+"@api-components/api-request-editor@^3.0.0-preview.4":
+  version "3.0.0-preview.4"
+  resolved "https://registry.yarnpkg.com/@api-components/api-request-editor/-/api-request-editor-3.0.0-preview.4.tgz#7c086c0def5e78e18ae3192ee114d8ad00bca3a7"
+  integrity sha512-uiNuG16dffowJO/lOMC4OtPjSk9F1vSEDsVIfi6R73oFfoF/qC5TUkmQCm9GJKkLskmf7osFL95NJ/KGNiestQ==
   dependencies:
-    "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
-    "@advanced-rest-client/events-target-mixin" "^3.0.0-preview.1"
-    "@advanced-rest-client/http-method-selector" "^3.0.0-preview.1"
-    "@advanced-rest-client/uuid-generator" "^3.0.0-preview.1"
+    "@advanced-rest-client/arc-icons" "^3.0.0-preview.2"
+    "@advanced-rest-client/authorization-panel" "^3.0.0-preview.2"
+    "@advanced-rest-client/events-target-mixin" "^3.0.0-preview.2"
+    "@advanced-rest-client/http-method-selector" "^3.0.0-preview.2"
+    "@advanced-rest-client/uuid-generator" "^3.0.0-preview.2"
     "@api-components/amf-helper-mixin" "^3.0.0-preview.1"
-    "@api-components/api-body-editor" "^3.0.0-preview.1"
-    "@api-components/api-headers-editor" "^3.0.0-preview.1"
-    "@api-components/api-url-data-model" "^3.0.0-preview.1"
-    "@api-components/api-url-editor" "^3.0.0-preview.1"
-    "@api-components/api-url-params-editor" "^3.0.0-preview.1"
-    "@api-components/authorization-panel" "^3.0.0-preview.1"
+    "@api-components/api-body-editor" "^3.0.0-preview.2"
+    "@api-components/api-headers-editor" "^3.0.0-preview.3"
+    "@api-components/api-url-data-model" "^3.0.0-preview.3"
+    "@api-components/api-url-editor" "^3.0.0-preview.2"
+    "@api-components/api-url-params-editor" "^3.0.0-preview.3"
     "@polymer/iron-flex-layout" "^3.0.0"
     "@polymer/iron-pages" "^3.0.0"
     "@polymer/paper-button" "^3.0.0"
     "@polymer/paper-icon-button" "^3.0.0"
-    "@polymer/paper-spinner" "^3.0.0"
+    "@polymer/paper-spinner" "^3.0.2"
     "@polymer/paper-tabs" "^3.0.0"
     "@polymer/paper-toast" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/polymer" "^3.2.0"
 
-"@api-components/api-request-panel@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-request-panel/-/api-request-panel-3.0.0-preview.1.tgz#d9d0bac7ac4f44f03aaa389a550c8269eb391200"
-  integrity sha512-nGVzwR0O2dMAJHOz0SXjkChSzWmABv8DaLW2Em/xt8wYBU0pyVaqCxusB5DvD8aX0FS47VLa+r7jn/PKio0Jmg==
+"@api-components/api-request-panel@^3.0.0-preview.2", "@api-components/api-request-panel@^3.0.0-preview.4":
+  version "3.0.0-preview.4"
+  resolved "https://registry.yarnpkg.com/@api-components/api-request-panel/-/api-request-panel-3.0.0-preview.4.tgz#003caba32afcb364a9dc7630448e0dd63fd20446"
+  integrity sha512-ojEfP8n3bRbeByTi2FFJJk53ZLnTGtctZdxydff1XrxckOWAxUg+Kgj7FQa5SxMHezlWkeyWaFjuF7Q8SuEwbg==
   dependencies:
-    "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
-    "@advanced-rest-client/events-target-mixin" "^3.0.0-preview.1"
-    "@advanced-rest-client/headers-parser-mixin" "^3.0.0-preview.2"
-    "@advanced-rest-client/response-view" "^3.0.0-preview.1"
-    "@api-components/api-request-editor" "^3.0.0-preview.1"
-    "@api-components/raml-aware" "^3.0.0-preview.1"
+    "@advanced-rest-client/arc-icons" "^3.0.0-preview.2"
+    "@advanced-rest-client/events-target-mixin" "^3.0.0-preview.2"
+    "@advanced-rest-client/headers-parser-mixin" "^3.0.0-preview.3"
+    "@advanced-rest-client/response-view" "^3.0.0-preview.2"
+    "@api-components/api-request-editor" "^3.0.0-preview.4"
+    "@api-components/raml-aware" "^3.0.0-preview.2"
     "@polymer/iron-scroll-target-behavior" "^3.0.0"
     "@polymer/paper-icon-button" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/polymer" "^3.2.0"
 
-"@api-components/api-resource-example-document@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-resource-example-document/-/api-resource-example-document-3.0.0-preview.1.tgz#9927b8f19685d12f764f8ed14ff6d4c583c8bfcb"
-  integrity sha512-Fy4KG5Brvo6MxNzuoWVyPy4p5TIii+oPLaOz7DAh8SDFM0tnFy6/CPw05IML7TiAM+XweriMzyHB93xozAzS8w==
+"@api-components/api-resource-example-document@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@api-components/api-resource-example-document/-/api-resource-example-document-3.0.2.tgz#1a02fa4a5192ccedaf8cb9620ff2eae2200cb2b5"
+  integrity sha512-T+d/c+we6I1Q/BDizsD+BmcSDbPL4cnb2kM9O4Lbx3mjCQ/MJUIqrqFlzFhSDJfA34+kAqApwznD7pieWSYt+A==
   dependencies:
-    "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
-    "@advanced-rest-client/json-table" "^3.0.0-preview.1"
-    "@api-components/amf-helper-mixin" "^3.0.0-preview.1"
-    "@api-components/api-example-generator" "^3.0.0-preview.1"
-    "@api-components/clipboard-copy" "^3.0.0-preview.1"
+    "@advanced-rest-client/clipboard-copy" "^3.0.0"
+    "@advanced-rest-client/json-table" "^3.0.2"
+    "@api-components/amf-helper-mixin" "^3.0.1"
+    "@api-components/api-example-generator" "^3.0.2"
     "@polymer/paper-button" "^3.0.0"
-    "@polymer/paper-icon-button" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
     "@polymer/prism-element" "^3.0.0"
+    lit-element "^2.0.1"
 
-"@api-components/api-responses-document@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-responses-document/-/api-responses-document-3.0.0-preview.1.tgz#e0ed557bdd15c1c3d38cfce7a1209b865d3a5980"
-  integrity sha512-YYkBN/GNosHHsnaV6FjJ/Q+FU4IB2tLn4julnMfmemmH9Xp3f+euk8+lhNW0xDtjkV24eK6wUX+kl1k0fUE9mg==
+"@api-components/api-responses-document@^3.0.0-preview.2":
+  version "3.0.0-preview.2"
+  resolved "https://registry.yarnpkg.com/@api-components/api-responses-document/-/api-responses-document-3.0.0-preview.2.tgz#95de8ef3de9128c7f2136be68f1539a90a577cf7"
+  integrity sha512-mnQzA2zZrc3LLMnOtmKuEaVvxfy4WdEXz5yd+O//sGsLxX2SqcYLndwJc22xORKWHJx9TkL3pLnPyDf6hZ1ymQ==
   dependencies:
     "@advanced-rest-client/markdown-styles" "^3.0.0-preview.1"
     "@api-components/amf-helper-mixin" "^3.0.0-preview.1"
-    "@api-components/api-annotation-document" "^3.0.0-preview.1"
-    "@api-components/api-body-document" "^3.0.0-preview.1"
-    "@api-components/api-headers-document" "^3.0.0-preview.1"
+    "@api-components/api-annotation-document" "^3.0.0-preview.2"
+    "@api-components/api-body-document" "^3.0.0-preview.2"
+    "@api-components/api-headers-document" "^3.0.0-preview.2"
     "@api-components/raml-aware" "^3.0.0-preview.1"
     "@polymer/iron-flex-layout" "^3.0.0"
     "@polymer/marked-element" "^3.0.0"
-    "@polymer/paper-item" "^3.0.0"
-    "@polymer/paper-listbox" "^3.0.0"
     "@polymer/paper-tabs" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/polymer" "^3.2.0"
 
-"@api-components/api-schema-document@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-schema-document/-/api-schema-document-3.0.0-preview.1.tgz#2e70a89e714467b9ce5b3cbe71654ec441549f3e"
-  integrity sha512-vPNuLYjdHd07RzT6v43hcLOkP7Et19tvbP7HYNTbAt9nvxmypxQSQZ2WwSUzGK/Dh50kfZepiuHgZGbDgG1IDw==
+"@api-components/api-schema-document@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@api-components/api-schema-document/-/api-schema-document-3.0.0.tgz#a408f2a7e97ab90d7bcd706d88e51e0fe916cafc"
+  integrity sha512-Zlhk8Wo0APIC48xuQlmHRRPo3RnsV0Xw6zPpbk9jZx14K6nMuPJVGqmGM9ze0xH1fEauB/qSv7aNkXNPmXd8ew==
   dependencies:
-    "@api-components/amf-helper-mixin" "^3.0.0-preview.1"
-    "@api-components/raml-aware" "^3.0.0-preview.1"
+    "@api-components/amf-helper-mixin" "^3.0.1"
+    "@api-components/raml-aware" "^3.0.0"
     "@polymer/iron-pages" "^3.0.0"
-    "@polymer/paper-tabs" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/paper-tabs" "^3.1.0"
     "@polymer/prism-element" "^3.0.0"
+    lit-element "^2.0.1"
 
-"@api-components/api-security-documentation@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-security-documentation/-/api-security-documentation-3.0.0-preview.1.tgz#396d8094855489ae239e0b34a21f25a421ed8f39"
-  integrity sha512-o6BR7zFbJpyXnKGdZJUp+qjX8lnMd7cMxvs9cTeRKhqweLhIjVR87OgXw/Z2wMOv0pHuDXh9xeuQUtKODwlLzQ==
+"@api-components/api-security-documentation@^3.0.0-preview.2":
+  version "3.0.0-preview.2"
+  resolved "https://registry.yarnpkg.com/@api-components/api-security-documentation/-/api-security-documentation-3.0.0-preview.2.tgz#13de50d8acda3c24194b46e567841411d31bc51c"
+  integrity sha512-pPgkBFRZPoevabCVIU0lW9Hc7J384P+JIlRmDkK1PgIdArZP3wq3cMu310i1+yzJHiBOqazpyTQ7s75iwodPDA==
   dependencies:
     "@advanced-rest-client/markdown-styles" "^3.0.0-preview.1"
     "@api-components/amf-helper-mixin" "^3.0.0-preview.1"
-    "@api-components/api-annotation-document" "^3.0.0-preview.1"
-    "@api-components/api-headers-document" "^3.0.0-preview.1"
-    "@api-components/api-parameters-document" "^3.0.0-preview.1"
-    "@api-components/api-responses-document" "^3.0.0-preview.1"
+    "@api-components/api-annotation-document" "^3.0.0-preview.2"
+    "@api-components/api-headers-document" "^3.0.0-preview.2"
+    "@api-components/api-parameters-document" "^3.0.0-preview.2"
+    "@api-components/api-responses-document" "^3.0.0-preview.2"
     "@api-components/raml-aware" "^3.0.0-preview.1"
     "@polymer/iron-flex-layout" "^3.0.0"
     "@polymer/marked-element" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/polymer" "^3.2.0"
 
-"@api-components/api-summary@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-summary/-/api-summary-3.0.0-preview.1.tgz#d616a9469f95b047497e8f8b3daf0363a2dc88a3"
-  integrity sha512-97yUd1/lniGVAu0GqMuEixvG0kvaOfL+B4dl4L5U01K4SaYwG9GZjr1O+O21d75VXuNI1Ff4SJwZNohyxMTKYw==
+"@api-components/api-summary@^3.0.0-preview.3":
+  version "3.0.0-preview.3"
+  resolved "https://registry.yarnpkg.com/@api-components/api-summary/-/api-summary-3.0.0-preview.3.tgz#7915e68e407c0d41970087fdf85bfdde4914b1cc"
+  integrity sha512-PNC45zAb4bWWJ/G6rxa3twn91TSGs5vEvD7RxTCAzO0RgrQTwRr4Kj+LBQQ/1cJXKgxdzkQ+tOvfQ02Yk4UubA==
   dependencies:
     "@advanced-rest-client/anypoint-styles" "^3.0.0-preview.2"
-    "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
-    "@advanced-rest-client/markdown-styles" "^3.0.0-preview.1"
+    "@advanced-rest-client/arc-icons" "^3.0.0-preview.2"
+    "@advanced-rest-client/clipboard-copy" "^3.0.0-preview.1"
+    "@advanced-rest-client/markdown-styles" "^3.0.0-preview.2"
     "@api-components/amf-helper-mixin" "^3.0.0-preview.1"
-    "@api-components/clipboard-copy" "^3.0.0-preview.1"
-    "@api-components/http-method-label" "^3.0.0-preview.1"
-    "@api-components/raml-aware" "^3.0.0-preview.1"
+    "@api-components/http-method-label" "^3.0.0-preview.2"
+    "@api-components/raml-aware" "^3.0.0-preview.2"
     "@polymer/iron-flex-layout" "^3.0.0"
     "@polymer/iron-meta" "^3.0.0"
     "@polymer/marked-element" "^3.0.0"
     "@polymer/paper-icon-button" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/polymer" "^3.2.0"
 
-"@api-components/api-type-document@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-type-document/-/api-type-document-3.0.0-preview.1.tgz#c7f8088c1ebc0b131e32ae5fcb2d06adb2710825"
-  integrity sha512-SUxWdZzBtoesHyXdiVTS2LQsUcdO3Rh3FK3JrqubsA1OANjkg4aMRrgMCvsqFh7Lz025aLvERrP3KBHftmU7uA==
+"@api-components/api-type-document@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@api-components/api-type-document/-/api-type-document-3.0.0.tgz#5117eca52191017b6367fb2ed1657c283bf3d14f"
+  integrity sha512-ZCskd8s3NdfQm8JO1tp1Cdl6ZR3EJRPyfWxptKndyRKCc8BPifdViiwW7IpoTWPYM5SWiqBnuCoUgLQwtJEl6w==
   dependencies:
-    "@advanced-rest-client/markdown-styles" "^3.0.0-preview.1"
-    "@api-components/amf-helper-mixin" "^3.0.0-preview.1"
-    "@api-components/api-annotation-document" "^3.0.0-preview.1"
-    "@api-components/api-resource-example-document" "^3.0.0-preview.1"
-    "@api-components/raml-aware" "^3.0.0-preview.1"
-    "@polymer/iron-flex-layout" "^3.0.0"
-    "@polymer/marked-element" "^3.0.0"
+    "@advanced-rest-client/arc-marked" "^1.0.0"
+    "@advanced-rest-client/markdown-styles" "^3.1.0"
+    "@api-components/amf-helper-mixin" "^3.0.1"
+    "@api-components/api-annotation-document" "^3.0.0"
+    "@api-components/api-resource-example-document" "^3.0.2"
+    "@api-components/raml-aware" "^3.0.0"
     "@polymer/paper-button" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    lit-element "^2.0.1"
 
-"@api-components/api-type-documentation@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-type-documentation/-/api-type-documentation-3.0.0-preview.1.tgz#609e405919bb6ba06f6d63786e8ed86f11523f5d"
-  integrity sha512-JyQHekpKaljnp4VdcjPKq0sgK4rBUqbe0oPdX1/ZwSXyh4fwZm3GqJSZ4qUKsfFmRAPexQu9t7zYm+Hw5sD5aQ==
+"@api-components/api-type-documentation@^3.0.0-preview.2":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@api-components/api-type-documentation/-/api-type-documentation-3.0.0.tgz#e69ee0b3058efb1285b9ee873d124618dce3104d"
+  integrity sha512-5CBTKTwW/yocSZuacD/BgIdxEWHvTxOR1HNr7QyTwwE11XqcDGAJ8YqQ9MtYYpeA+FX9v7fZ4pGFIoITSLa8MA==
   dependencies:
-    "@advanced-rest-client/markdown-styles" "^3.0.0-preview.1"
-    "@api-components/amf-helper-mixin" "^3.0.0-preview.1"
-    "@api-components/api-annotation-document" "^3.0.0-preview.1"
-    "@api-components/api-resource-example-document" "^3.0.0-preview.1"
-    "@api-components/api-schema-document" "^3.0.0-preview.1"
-    "@api-components/api-type-document" "^3.0.0-preview.1"
-    "@api-components/raml-aware" "^3.0.0-preview.1"
-    "@polymer/iron-flex-layout" "^3.0.0"
-    "@polymer/marked-element" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@advanced-rest-client/arc-marked" "^1.0.0"
+    "@advanced-rest-client/markdown-styles" "^3.1.0"
+    "@api-components/amf-helper-mixin" "^3.0.1"
+    "@api-components/api-annotation-document" "^3.0.0"
+    "@api-components/api-resource-example-document" "^3.0.2"
+    "@api-components/api-schema-document" "^3.0.0"
+    "@api-components/api-type-document" "^3.0.0"
+    "@api-components/raml-aware" "^3.0.0"
+    lit-element "^2.0.1"
 
-"@api-components/api-url-data-model@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-url-data-model/-/api-url-data-model-3.0.0-preview.1.tgz#e07e0bb5bf51753cddc2179909df030c91123349"
-  integrity sha512-XRT+vFEpZ3sZMAjyHTGaEi76M+PYsrizGHSATSYWUGOIqPzVemQJ1Ob2CpswZ4LQ1NxRyw/TybOqwMNjPbEFtA==
+"@api-components/api-url-data-model@^3.0.0-preview.3":
+  version "3.0.0-preview.3"
+  resolved "https://registry.yarnpkg.com/@api-components/api-url-data-model/-/api-url-data-model-3.0.0-preview.3.tgz#b925f67050ec22e0c5e4904d877dc5d1a9aba7dd"
+  integrity sha512-PgfXMq8fc/qR0Hw3eKgB8K1cNaqJ7QREEgj99jIwa3Bk+roDZ2axU2nswsCquwl7mmOXKgvOA+jKIeaJNn/4+w==
   dependencies:
     "@api-components/amf-helper-mixin" "^3.0.0-preview.1"
-    "@api-components/api-view-model-transformer" "^3.0.0-preview.1"
-    "@api-components/raml-aware" "^3.0.0-preview.1"
-    "@polymer/polymer" "^3.0.0"
+    "@api-components/api-view-model-transformer" "^3.0.0-preview.2"
+    "@api-components/raml-aware" "^3.0.0-preview.2"
+    "@polymer/polymer" "^3.2.0"
 
-"@api-components/api-url-editor@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-url-editor/-/api-url-editor-3.0.0-preview.1.tgz#109b2504324ab2553c89be6970cc9ff0802cfe94"
-  integrity sha512-kGbf93BLGaJudDNIEz/ZNUMoVkbekhbNgLWiw4DbwaW/SEx0OVP8mv8bkuA+tQXd4d3A0FOlyLdnzxMm1zrLgA==
+"@api-components/api-url-editor@^3.0.0-preview.2":
+  version "3.0.0-preview.2"
+  resolved "https://registry.yarnpkg.com/@api-components/api-url-editor/-/api-url-editor-3.0.0-preview.2.tgz#1bd344742d2f21fc733fb65e9971d6fc1339798c"
+  integrity sha512-Yv38KczzRISI7yKwnOdPHX8s448mufvvtI/RYsV30pYlxzOZ5rbdtNFObnbuL9+IODJjY7CXvUgUW61W/PE4yA==
   dependencies:
     "@advanced-rest-client/events-target-mixin" "^3.0.0-preview.1"
     "@polymer/iron-flex-layout" "^3.0.0"
@@ -915,16 +929,16 @@
     "@polymer/paper-input" "^3.0.0"
     "@polymer/polymer" "^3.0.0"
 
-"@api-components/api-url-params-editor@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-url-params-editor/-/api-url-params-editor-3.0.0-preview.1.tgz#801fca8eac0171ad99db4ef664564bec8fde85bd"
-  integrity sha512-BLc82TzyPa0+k+s1D99IkaRkxZ6UgRqq2ArffLs/nnyabZilO9jMCBvTAi+jlY/xoR9FrzVAzqT5MzFCnNycYw==
+"@api-components/api-url-params-editor@^3.0.0-preview.3":
+  version "3.0.0-preview.3"
+  resolved "https://registry.yarnpkg.com/@api-components/api-url-params-editor/-/api-url-params-editor-3.0.0-preview.3.tgz#bd166fd4f6caea3ade29885396c233f59347a856"
+  integrity sha512-+X2Vttlw/fl/+NJxIShJ8F2u3ZULhW2el6ZW4YfMDwIGJWDAdaeRO6dgL+0bs3PSzsI8QZbNTVAyCpOQ23iFLA==
   dependencies:
-    "@advanced-rest-client/arc-icons" "^3.0.0-preview.1"
-    "@advanced-rest-client/events-target-mixin" "^3.0.0-preview.1"
-    "@advanced-rest-client/markdown-styles" "^3.0.0-preview.1"
-    "@api-components/api-form-mixin" "^3.0.0-preview.1"
-    "@api-components/api-property-form-item" "^3.0.0-preview.1"
+    "@advanced-rest-client/arc-icons" "^3.0.0-preview.2"
+    "@advanced-rest-client/events-target-mixin" "^3.0.0-preview.3"
+    "@advanced-rest-client/markdown-styles" "^3.0.0-preview.2"
+    "@api-components/api-form-mixin" "^3.0.0-preview.2"
+    "@api-components/api-property-form-item" "^3.0.0-preview.2"
     "@polymer/iron-collapse" "^3.0.0"
     "@polymer/iron-flex-layout" "^3.0.0"
     "@polymer/iron-form" "^3.0.0"
@@ -935,13 +949,13 @@
     "@polymer/paper-checkbox" "^3.0.0"
     "@polymer/paper-dropdown-menu" "^3.0.0"
     "@polymer/paper-icon-button" "^3.0.0"
-    "@polymer/paper-input" "^3.0.0"
+    "@polymer/paper-input" "^3.0.2"
     "@polymer/paper-item" "^3.0.0"
     "@polymer/paper-listbox" "^3.0.0"
     "@polymer/paper-tooltip" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
+    "@polymer/polymer" "^3.2.0"
 
-"@api-components/api-view-model-transformer@^3.0.0-preview.1":
+"@api-components/api-view-model-transformer@3.0.0-preview.1", "@api-components/api-view-model-transformer@^3.0.0-preview.1", "@api-components/api-view-model-transformer@^3.0.0-preview.2":
   version "3.0.0-preview.1"
   resolved "https://registry.yarnpkg.com/@api-components/api-view-model-transformer/-/api-view-model-transformer-3.0.0-preview.1.tgz#f9f5ff5eb0f474358d65898c769ccc3a52f6110c"
   integrity sha512-kOoO6hKEAemTjqvOnUD6jTvZF5/x3LCF3qiJLTFXqjguyJBJDBNKDzYUTOxGPIduU4ncxRSiYYkPufegpRQ4pA==
@@ -951,44 +965,18 @@
     "@api-components/api-example-generator" "^3.0.0-preview.2"
     "@polymer/polymer" "^3.0.0"
 
-"@api-components/authorization-panel@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/authorization-panel/-/authorization-panel-3.0.0-preview.1.tgz#efb76bbc48aa373107d7c394ace7d9db111cf9cd"
-  integrity sha512-w0VenTV8YUMUu2TMhTDEJDvNKjMCgUW5wQw0wBsPgLljrskmaHEaQ2EwdX9V2aTag+MScBwgIlpO40gweoSHkQ==
+"@api-components/http-method-label@^3.0.0-preview.1", "@api-components/http-method-label@^3.0.0-preview.2":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@api-components/http-method-label/-/http-method-label-3.0.0.tgz#234d13964c6e7fb5174055d83f9ae454289f3460"
+  integrity sha512-G8+90FqmlMlBRhyU5rUmPV/bzq+tw++y5yMbJeXe37WI8XB/K+ALgPzIJwvgbJbn9+7ULVMOhQNskuXhZnBdIA==
   dependencies:
-    "@advanced-rest-client/auth-methods" "^4.0.0-preview.2"
-    "@advanced-rest-client/events-target-mixin" "^3.0.0-preview.1"
-    "@api-components/amf-helper-mixin" "^3.0.0-preview.1"
-    "@polymer/iron-flex-layout" "^3.0.0"
-    "@polymer/iron-meta" "^3.0.0"
-    "@polymer/paper-dropdown-menu" "^3.0.0"
-    "@polymer/paper-item" "^3.0.0"
-    "@polymer/paper-listbox" "^3.0.0"
-    "@polymer/paper-ripple" "^3.0.0"
-    "@polymer/polymer" "^3.0.0"
-    cryptojslib "^3.1.2"
-    jsrsasign "^8.0.12"
+    lit-element "^2.0.1"
+    lit-html "^1.0.0"
 
-"@api-components/clipboard-copy@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/clipboard-copy/-/clipboard-copy-3.0.0-preview.1.tgz#98466b6d3e7ee2039b23a91c500259aebd00cc0a"
-  integrity sha512-S+G5eEgYiqK105g8r60BXrqaj5sWxGCIeIpHTdrmGwdkscgaXdNULsF4CJ6wGkZvWW1VIZicjlRDvlBBMn713g==
-  dependencies:
-    "@polymer/polymer" "^3.0.0"
-
-"@api-components/http-method-label@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/http-method-label/-/http-method-label-3.0.0-preview.1.tgz#a3244c35b2516834cbd13666e547ef4093a3a764"
-  integrity sha512-8P+fyaTpyvQJnBdzZxMaWlCcFTQFzV0xAFWN+ow+SWYZnyMhzJua2n9HimWf/1cMKBxAcepGPprQPGWpYyR97A==
-  dependencies:
-    "@polymer/polymer" "^3.0.0"
-
-"@api-components/raml-aware@^3.0.0-preview.1":
-  version "3.0.0-preview.1"
-  resolved "https://registry.yarnpkg.com/@api-components/raml-aware/-/raml-aware-3.0.0-preview.1.tgz#192ba4c5d8f164721c0b631cc97f6e69b8d8c2d9"
-  integrity sha512-FEQbEITzs8HpEJiZedROe/6QxV4LEtR8MOwsl2lci4cP3uTpMnuNwvbPG7MojFQIuD1EcFD8PuXyPnidb8INAQ==
-  dependencies:
-    "@polymer/polymer" "^3.0.0"
+"@api-components/raml-aware@3.0.0", "@api-components/raml-aware@^3.0.0", "@api-components/raml-aware@^3.0.0-preview.1", "@api-components/raml-aware@^3.0.0-preview.2":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@api-components/raml-aware/-/raml-aware-3.0.0.tgz#5c10d56c2db18059a81ef4027dae22f6f747984f"
+  integrity sha512-lWIjd8Wq6tYJmF8ZXyUgQdGq+vhXP7pKY/QcPQdKOn2IXb4/gqTglebtXnxjME41+uKSPQoMSKTEVT/PwX93qQ==
 
 "@polymer/font-roboto@^3.0.1":
   version "3.0.2"
@@ -1195,7 +1183,7 @@
   dependencies:
     "@polymer/polymer" "^3.0.0"
 
-"@polymer/iron-validatable-behavior@^3.0.0", "@polymer/iron-validatable-behavior@^3.0.0-pre.26", "@polymer/iron-validatable-behavior@github:anypoint-components/iron-validatable-behavior#3.0.0-preview":
+"@polymer/iron-validatable-behavior@3.0.0-preview.1", "@polymer/iron-validatable-behavior@^3.0.0", "@polymer/iron-validatable-behavior@^3.0.0-pre.26", "@polymer/iron-validatable-behavior@github:anypoint-components/iron-validatable-behavior#3.0.0-preview":
   version "3.0.0-preview.1"
   resolved "https://codeload.github.com/anypoint-components/iron-validatable-behavior/tar.gz/aff17d4630d7d4fb674b7f3e8b1ae7de649eab48"
   dependencies:
@@ -1245,7 +1233,7 @@
     "@polymer/paper-styles" "^3.0.0-pre.26"
     "@polymer/polymer" "^3.0.0"
 
-"@polymer/paper-checkbox@^3.0.0", "@polymer/paper-checkbox@github:anypoint-components/paper-checkbox#3.0.0-preview":
+"@polymer/paper-checkbox@3.0.0-preview.1", "@polymer/paper-checkbox@^3.0.0", "@polymer/paper-checkbox@github:anypoint-components/paper-checkbox#3.0.0-preview":
   version "3.0.0-preview.1"
   resolved "https://codeload.github.com/anypoint-components/paper-checkbox/tar.gz/4e550f00c9417b917793a35e556ab4afa5fea58b"
   dependencies:
@@ -1283,7 +1271,7 @@
     "@polymer/paper-dialog-behavior" "^3.0.0-pre.26"
     "@polymer/polymer" "^3.0.0"
 
-"@polymer/paper-dropdown-menu@^3.0.0", "@polymer/paper-dropdown-menu@github:anypoint-components/paper-dropdown-menu#3.0.0-preview":
+"@polymer/paper-dropdown-menu@3.0.0-preview.1", "@polymer/paper-dropdown-menu@^3.0.0", "@polymer/paper-dropdown-menu@github:anypoint-components/paper-dropdown-menu#3.0.0-preview":
   version "3.0.0-preview.1"
   resolved "https://codeload.github.com/anypoint-components/paper-dropdown-menu/tar.gz/f719860000d6912a95881dd56412c77bcc06569e"
   dependencies:
@@ -1306,7 +1294,7 @@
     "@polymer/paper-styles" "^3.0.0-pre.26"
     "@polymer/polymer" "^3.0.0"
 
-"@polymer/paper-input@^3.0.0", "@polymer/paper-input@^3.0.0-pre.26", "@polymer/paper-input@github:anypoint-components/paper-input#3.0.0-preview":
+"@polymer/paper-input@3.0.0-preview.1", "@polymer/paper-input@^3.0.0", "@polymer/paper-input@^3.0.0-pre.26", "@polymer/paper-input@^3.0.2", "@polymer/paper-input@github:anypoint-components/paper-input#3.0.0-preview":
   version "3.0.0-preview.1"
   resolved "https://codeload.github.com/anypoint-components/paper-input/tar.gz/2a09be9bac33f62061bc38398736cf0213dae8b9"
   dependencies:
@@ -1392,7 +1380,7 @@
     "@polymer/iron-a11y-keys-behavior" "^3.0.0-pre.26"
     "@polymer/polymer" "^3.0.0"
 
-"@polymer/paper-spinner@^3.0.0":
+"@polymer/paper-spinner@^3.0.2":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@polymer/paper-spinner/-/paper-spinner-3.0.2.tgz#c857c79f0494bc74e9ae293839d00f37fcf29f78"
   integrity sha512-XUzu8/4NH+pnNZUTI2MxtOKFAr0EOsW7eGhTg3VBhTh7DDW/q3ewzwYRWnqNJokX9BEnxKMiXXaIeTEBq4k2dw==
@@ -1409,10 +1397,10 @@
     "@polymer/iron-flex-layout" "^3.0.0-pre.26"
     "@polymer/polymer" "^3.0.0"
 
-"@polymer/paper-tabs@^3.0.0":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@polymer/paper-tabs/-/paper-tabs-3.0.1.tgz#525bfdfeff00af37d16c7ca70779fad72f74a086"
-  integrity sha512-gXCMUp17ND1rfhKzA3HPxA7CiHa00FG6cj2upovzPnm3/0rZ/apHGOFH8nyNcBU0JyrxTgKi8qVDp7eZqASr9g==
+"@polymer/paper-tabs@3.1.0", "@polymer/paper-tabs@^3.0.0", "@polymer/paper-tabs@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@polymer/paper-tabs/-/paper-tabs-3.1.0.tgz#a173839d20703fdd5fca97a9d878f7b0e6257150"
+  integrity sha512-t8G+3CiyI0R+wA077UNQXR/oG9GlsqRRO1KMsFHHjBSsYqWXghNsqxUG827wEj+PafI5u9tZ3vVt1S++Lg4B2g==
   dependencies:
     "@polymer/iron-behaviors" "^3.0.0-pre.26"
     "@polymer/iron-flex-layout" "^3.0.0-pre.26"
@@ -1443,7 +1431,7 @@
     "@polymer/paper-styles" "^3.0.0-pre.26"
     "@polymer/polymer" "^3.0.0"
 
-"@polymer/polymer@^3.0.0", "@polymer/polymer@^3.1.0":
+"@polymer/polymer@3.1.0", "@polymer/polymer@^3.0.0", "@polymer/polymer@^3.1.0", "@polymer/polymer@^3.2.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@polymer/polymer/-/polymer-3.1.0.tgz#3e1b7447a1e350fd654e1823def655d0f0828a70"
   integrity sha512-hwN8IMERsFATz/9dSMxYHL+84J9uBkPuuarxJWlTsppZ4CAYTZKnepBfNrKoyNsafBmA3yXBiiKPPf+fJtza7A==
@@ -1458,15 +1446,15 @@
     "@polymer/polymer" "^3.0.0"
     prismjs "^1.11.0"
 
-"@webcomponents/shadycss@^1.5.2":
+"@webcomponents/shadycss@1.9.0", "@webcomponents/shadycss@^1.5.2", "@webcomponents/shadycss@^1.9.1":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@webcomponents/shadycss/-/shadycss-1.9.0.tgz#8450465037370d4f5c32e801bb2554a7cf2f5037"
   integrity sha512-g8Xa+6RSEME4g/wLJW4YII0eq15rvXp76RxPAuv7hx+Bdoi7GzZJ/EoZOUfyIbqAsQbII1TcWD4/+Xhs5NcM1w==
 
-"@webcomponents/webcomponentsjs@^2.0.0":
-  version "2.2.7"
-  resolved "https://registry.yarnpkg.com/@webcomponents/webcomponentsjs/-/webcomponentsjs-2.2.7.tgz#1f1a7a7aa083db5ae6aadaeda68caa8fd8657462"
-  integrity sha512-kPPjzV+5kpoWpTniyvBSPcXS33f3j/C6HvNOJ3YecF3pvz3XwVeU4ammbxtVy/osF3z7hr1DYNptIf4oPEvXZA==
+"@webcomponents/webcomponentsjs@^2.2.8":
+  version "2.2.10"
+  resolved "https://registry.yarnpkg.com/@webcomponents/webcomponentsjs/-/webcomponentsjs-2.2.10.tgz#6f6bee0277833ae98d7e5b46f1e0fdb48cd5ff44"
+  integrity sha512-5dzhUhP+h0qMiK0IWb7VNb0OGBoXO3AuI6Qi8t9PoKT50s5L1jv0xnwnLq+cFgPuTB8FLTNP8xIDmyoOsKBy9Q==
 
 JSV@^4.0.x:
   version "4.0.2"
@@ -1536,7 +1524,19 @@ jsrsasign@^8.0.12:
   resolved "https://registry.yarnpkg.com/jsrsasign/-/jsrsasign-8.0.12.tgz#22abb9656d34a30b9530436720835e89c2e5c316"
   integrity sha1-Iqu5ZW00owuVMENnIINeicLlwxY=
 
-marked@~0.3.9:
+lit-element@^2.0.1, lit-element@^2.1.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-2.2.0.tgz#e853be38021f0c7743a10180affdf84b8a02400c"
+  integrity sha512-Mzs3H7IO4wAnpzqreHw6dQqp9IG+h/oN8X9pgNbMZbE7x6B0aNOwP5Nveox/5HE+65ZfW2PeULEjoHkrwpTnuQ==
+  dependencies:
+    lit-html "^1.0.0"
+
+lit-html@^1.0.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/lit-html/-/lit-html-1.1.1.tgz#186ed6abcc70c0d24e1132b37411c3b2645ed1aa"
+  integrity sha512-1WqhkPpj+CKwLRXCCbyRGnWkcFKE4ft2+j8C2zaXwFUK9I2vYDzTuDGPh0H9hZcDBEwoe6YpPC8AO5734EPORQ==
+
+marked@0.3.19, marked@^0.6.2, marked@~0.3.9:
   version "0.3.19"
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.19.tgz#5d47f709c4c9fc3c216b6d46127280f40b39d790"
   integrity sha512-ea2eGWOqNxPcXv8dyERdSr/6FmzvWwzjMxpfGB/sbMccXoct+xY+YukPD+QTUZwyvK7BZwcr4m21WBOW41pAkg==
