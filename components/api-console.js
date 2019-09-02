@@ -11,14 +11,14 @@ WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 License for the specific language governing permissions and limitations under
 the License.
 */
-import './node_modules/@api-components/raml-aware/raml-aware.js';
-import './node_modules/@api-components/api-navigation/api-navigation.js';
-import './node_modules/@api-components/api-documentation/api-documentation.js';
-import './node_modules/@api-components/api-request-panel/api-request-panel.js';
-import './node_modules/@advanced-rest-client/oauth-authorization/oauth1-authorization.js';
-import './node_modules/@advanced-rest-client/oauth-authorization/oauth2-authorization.js';
-import './node_modules/@advanced-rest-client/anypoint-styles/colors.js';
-import './node_modules/@advanced-rest-client/anypoint-styles/din-pro.js';
-import './node_modules/@advanced-rest-client/anypoint-styles/typography.js';
-import './node_modules/@advanced-rest-client/anypoint-styles/anypoint-theme.js';
-import './node_modules/@advanced-rest-client/arc-icons/arc-icons.js';
+import '@api-components/raml-aware/raml-aware.js';
+import '@api-components/api-navigation/api-navigation.js';
+import '@api-components/api-documentation/api-documentation.js';
+import '@api-components/api-request-panel/api-request-panel.js';
+import '@advanced-rest-client/oauth-authorization/oauth1-authorization.js';
+import '@advanced-rest-client/oauth-authorization/oauth2-authorization.js';
+import '@anypoint-web-components/anypoint-styles/colors.js';
+import '@anypoint-web-components/anypoint-styles/din-pro.js';
+import '@anypoint-web-components/anypoint-styles/typography.js';
+import '@anypoint-web-components/anypoint-styles/default-theme.js';
+import '@advanced-rest-client/arc-icons/arc-icons.js';
