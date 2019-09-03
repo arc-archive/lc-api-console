@@ -1,12 +1,5 @@
 {
   "description": "The API console sources for Community Cloud.",
-  "keywords": [
-    "web-components",
-    "polymer",
-    "raml",
-    "api",
-    "console"
-  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/advanced-rest-client/lc-api-console.git"
@@ -20,32 +13,20 @@
     "Pawel Psztyc",
     "The Advanced REST client authors <arc@mulesoft.com>"
   ],
-  "scripts": {
-    "build": "NODE_OPTIONS=--max_old_space_size=2048 node build.js"
-  },
   "bugs": {
     "url": "https://github.com/advanced-rest-client/lc-api-console/issues",
     "email": "arc@mulesoft.com"
   },
   "dependencies": {
-    "@advanced-rest-client/anypoint-styles": "^3.0.0-preview.2",
-    "@advanced-rest-client/arc-icons": "github:anypoint-components/anypoint-icons#3.0.0-preview",
-    "@advanced-rest-client/oauth-authorization": "^3.0.0-preview.3",
-    "@advanced-rest-client/xhr-simple-request": "^3.0.0-preview.2",
-    "@api-components/amf-helper-mixin": "^3.0.0-preview.1",
-    "@api-components/api-console-default-theme": "^3.0.0-preview.1",
-    "@api-components/api-documentation": "3.0.0-preview.6",
-    "@api-components/api-navigation": "3.0.0-preview.2",
-    "@api-components/api-request-panel": "^3.0.0-preview.4",
-    "@api-components/api-summary": "^3.0.0-preview.3",
-    "@polymer/iron-flex-layout": "^3.0.0",
-    "@polymer/iron-validatable-behavior": "github:anypoint-components/iron-validatable-behavior#3.0.0-preview",
-    "@polymer/iron-validator-behavior": "github:anypoint-components/iron-validator-behavior#3.0.0-preview",
-    "@polymer/paper-checkbox": "github:anypoint-components/paper-checkbox#3.0.0-preview",
-    "@polymer/paper-dropdown-menu": "github:anypoint-components/paper-dropdown-menu#3.0.0-preview",
-    "@polymer/paper-input": "github:anypoint-components/paper-input#3.0.0-preview",
-    "@polymer/polymer": "^3.2.0",
-    "@webcomponents/webcomponentsjs": "^2.2.8",
+    "@advanced-rest-client/arc-icons": "github:anypoint-web-components/anypoint-icons#master",
+    "@advanced-rest-client/oauth-authorization": "^3.0.0",
+    "@advanced-rest-client/xhr-simple-request": "^3.0.0",
+    "@anypoint-web-components/anypoint-styles": "^1.0.0-preview.2",
+    "@api-components/amf-helper-mixin": "^3.1.0",
+    "@api-components/api-documentation": "^3.0.0",
+    "@api-components/api-navigation": "^3.0.0",
+    "@api-components/api-request-panel": "^3.0.0",
+    "@api-components/api-summary": "^3.0.0",
     "web-animations-js": "^2.3.1"
   },
   "contributors": [
@@ -53,26 +34,6 @@
     "The Advanced REST client authors <arc@mulesoft.com>"
   ],
   "resolutions": {
-    "@polymer/iron-validatable-behavior": "3.0.0-preview.1",
-    "@polymer/iron-validator-behavior": "github:anypoint-components/iron-validator-behavior#3.0.0-preview",
-    "@polymer/paper-checkbox": "3.0.0-preview.1",
-    "@polymer/paper-dropdown-menu": "3.0.0-preview.1",
-    "@polymer/paper-input": "3.0.0-preview.1",
-    "@advanced-rest-client/arc-icons": "3.0.0-preview.1",
-    "@api-components/amf-helper-mixin": "3.0.0-preview.1",
-    "@polymer/polymer": "3.1.0",
-    "@webcomponents/shadycss": "1.9.0",
-    "@advanced-rest-client/headers-parser-mixin": "3.0.0-preview.2",
-    "@advanced-rest-client/events-target-mixin": "3.0.0",
-    "@api-components/raml-aware": "3.0.0",
-    "@advanced-rest-client/markdown-styles": "3.1.0",
-    "marked": "0.3.19",
-    "@api-components/api-example-generator": "3.0.2",
-    "@polymer/paper-tabs": "3.1.0",
-    "@advanced-rest-client/payload-parser-mixin": "3.0.0-preview.1",
-    "@api-components/api-property-form-item": "3.0.0-preview.1",
-    "@api-components/api-view-model-transformer": "3.0.0-preview.1",
-    "@advanced-rest-client/paper-autocomplete": "3.0.0-preview.1",
-    "@api-components/api-form-mixin": "3.0.0-preview.1"
+    "@advanced-rest-client/arc-icons": "1.0.0"
   }
 }

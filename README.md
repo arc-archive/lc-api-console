@@ -1,43 +1,39 @@
 # API Console Community Cloud Edition
 
 A version of API Console that works with Salesforce Lightning Components.
-This is a bundler script that generates production ready sources for the console.
+
+This is a bundler script that generates production ready sources for API Console. The sources has to be included into community cloud application separately.
 
 ## Usage
 
-**Use Yarn!** Npm is not adjusted to handle web components, yet developer community and browser vendors opted to use ES modules as they are right now.
-Because components needs flat structure but rest of node modules requires nested structure, I suggest to install dependencies using Yarn. Npm most likely produce unexpected results.
+### Clone the project
 
 ```sh
 git clone git@github.com:advanced-rest-client/lc-api-console.git
 cd lc-api-console
+```
+
+### Install dependencies
+
+```sh
 npm i
-# this is "prepare" script
-# cd components && yarn install && cd ..
+```
+
+### Create the bundle
+
+```sh
 npm run build
 ```
 
-It may take a minute to create the bundles.
+### Preview build
 
-The output is in `build/` directory.
+```
+npm run start:build
+```
 
-To dynamically load API console sourced depending on browser capabilities,
-use `apic-import.js` script. It will detect which bundle to use and will use
-regular `<script>` tag to import the sources.
-Set `window.apic.basePath` property to point to a location of the bundles.
-By default it is relative to current location.
+The preview page won't show anything as components are not included into `components/index.html` page. However the point is to check DevTools console for any import errors.
+The console should be empty.
 
-```html
-<head>
-  <script>
-  const window.apic = {
-    basePath: 'https://cdn.domain.com/lc-apic/'
-  };
-  </script>
-  <script src="https://cdn.domain.com/lc-apic/build/es6prod/api-console.js"></script>
-</head>
-<body>
-  <api-navigation></api-navigation>
-  <api-documentation></api-documentation>
-  <api-request-panel></api-request-panel>
-</body>
+## TODO
+
+-   [ ] expand `rollup` configuration to create a bundle of non-module dependencies (CodeMirror, linters, etc)
