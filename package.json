@@ -2,10 +2,7 @@
   "description": "The API console bundler for community cloud.",
   "keywords": [
     "web-components",
-    "polymer",
-    "raml",
-    "api",
-    "console"
+    "api-console"
   ],
   "repository": {
     "type": "git",

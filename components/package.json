@@ -22,11 +22,7 @@
     "@advanced-rest-client/oauth-authorization": "^3.0.0",
     "@advanced-rest-client/xhr-simple-request": "^3.0.0",
     "@anypoint-web-components/anypoint-styles": "^1.0.0-preview.2",
-    "@api-components/amf-helper-mixin": "^3.1.0",
-    "@api-components/api-documentation": "^3.0.0",
-    "@api-components/api-navigation": "^3.0.0",
-    "@api-components/api-request-panel": "^3.0.0",
-    "@api-components/api-summary": "^3.0.0",
+    "@anypoint-web-components/api-console": "^6.0.0-preview.4",
     "web-animations-js": "^2.3.1"
   },
   "contributors": [

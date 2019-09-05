@@ -11,10 +11,8 @@ WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 License for the specific language governing permissions and limitations under
 the License.
 */
-import '@api-components/raml-aware/raml-aware.js';
-import '@api-components/api-navigation/api-navigation.js';
-import '@api-components/api-documentation/api-documentation.js';
-import '@api-components/api-request-panel/api-request-panel.js';
+import '@anypoint-web-components/api-console/api-console.js';
+import '@anypoint-web-components/api-console/api-console-app.js';
 import '@advanced-rest-client/oauth-authorization/oauth1-authorization.js';
 import '@advanced-rest-client/oauth-authorization/oauth2-authorization.js';
 import '@anypoint-web-components/anypoint-styles/colors.js';
