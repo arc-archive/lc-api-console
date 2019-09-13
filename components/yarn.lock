@@ -191,7 +191,7 @@
   dependencies:
     "@polymer/polymer" "^3.0.0"
 
-"@advanced-rest-client/http-code-snippets@^3.0.0":
+"@advanced-rest-client/http-code-snippets@^3.0.1":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@advanced-rest-client/http-code-snippets/-/http-code-snippets-3.0.1.tgz#0006c3b585640614024d084cb69adbc3ba29aab2"
   integrity sha512-moqaOiz3K4kmF7L20fvZSQbJ59i+02Guw4G/zDeBtkyzzDPsjT0lji5h3FbRU+ij87c+7AuQWri2ceGc6sgh1A==
@@ -283,7 +283,7 @@
   dependencies:
     lit-element "^2.2.1"
 
-"@advanced-rest-client/oauth-authorization@^3.0.0":
+"@advanced-rest-client/oauth-authorization@^3.0.0", "@advanced-rest-client/oauth-authorization@^3.0.1":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@advanced-rest-client/oauth-authorization/-/oauth-authorization-3.0.1.tgz#8ed2c28c23dd070a1a6363f1828e2be4647f0b50"
   integrity sha512-zloVhv+rf9+iNBtckKOXgGFv4ev2Oft2+odpjARcEeNKJ93CnW9T3E4PODABCuE/oCfZAqpTtybrpI9vNWdVFw==
@@ -493,9 +493,9 @@
     "@anypoint-web-components/validatable-mixin" "^1.0.0"
 
 "@anypoint-web-components/anypoint-input@^0.2.0", "@anypoint-web-components/anypoint-input@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@anypoint-web-components/anypoint-input/-/anypoint-input-0.2.2.tgz#84ddb92f0ca01a3fcf9de8290bce0c24d24a3813"
-  integrity sha512-2d5oSEsd4pKDxmdVAani4lBo25MFRrXw2oC7gUeLfvd8EAWCR2nxrl5N26kuHYJ7tmu1F8SLHj3SONh0zFIZJw==
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@anypoint-web-components/anypoint-input/-/anypoint-input-0.2.4.tgz#1ab999b57cb5f430fe0f9cc6451f61b604e4ffa3"
+  integrity sha512-ms8uQyNrpoxmNyGh+0OCB2n7rpCulSJE1I9UA6qdBNfVXpKVzY4XDotiYWStBmHIIAYjJvTJcLeV4CWH14Xehg==
   dependencies:
     "@advanced-rest-client/arc-icons" "^3.0.0"
     "@anypoint-web-components/anypoint-button" "^1.0.9"
@@ -573,17 +573,42 @@
     lit-element "^2.0.1"
     lit-html "^1.1.2"
 
+"@anypoint-web-components/api-console@^6.0.0-preview.4":
+  version "6.0.0-preview.4"
+  resolved "https://registry.yarnpkg.com/@anypoint-web-components/api-console/-/api-console-6.0.0-preview.4.tgz#b8cbdc47b6a72b27c5177a9b3e794fd5988483cb"
+  integrity sha512-JXUtC05Vi3do53AjPE2Qg0Khl69C9DV4kHfELkefOdybyofcJhLe4xayxykwMqUUO7fd4lVDbhgyZtwAIerW2Q==
+  dependencies:
+    "@advanced-rest-client/arc-icons" "^3.0.0"
+    "@advanced-rest-client/oauth-authorization" "^3.0.1"
+    "@advanced-rest-client/xhr-simple-request" "^3.0.0"
+    "@anypoint-web-components/anypoint-button" "^1.0.7"
+    "@api-components/amf-helper-mixin" "^3.1.6"
+    "@api-components/api-console-default-theme" "^3.0.0-preview.2"
+    "@api-components/api-console-ext-comm" "^3.0.0"
+    "@api-components/api-documentation" "^3.0.1"
+    "@api-components/api-navigation" "^3.1.0"
+    "@api-components/api-request-panel" "^3.0.0"
+    "@api-components/raml-aware" "^3.0.0"
+    "@polymer/app-layout" "^3.1.0"
+    "@polymer/iron-icon" "^3.0.1"
+    "@polymer/iron-media-query" "^3.0.0"
+    "@polymer/paper-toast" "^3.0.0"
+    lit-element "^2.0.1"
+    lit-element-router "^1.2.5"
+    lit-html "^1.1.2"
+    web-animations-js "^2.3.2"
+
 "@anypoint-web-components/validatable-mixin@^1.0.0", "@anypoint-web-components/validatable-mixin@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@anypoint-web-components/validatable-mixin/-/validatable-mixin-1.0.1.tgz#3b0cae165d272a832cd292f7ad2cc3a7d4f431b3"
-  integrity sha512-a3WXuH5J4QNceK6ctJaPE9nh5rZ+6+JT6azrgN1lAYvmnZ5mHbc9qjFUngjzqqvtfsjm6p6oWuQJMABT+V3k2Q==
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@anypoint-web-components/validatable-mixin/-/validatable-mixin-1.0.2.tgz#4d628003d80a2e86dba41b9dde797160b1abc74c"
+  integrity sha512-i6AvxftvjAsKGx+pWFiHBsaQ2AneYAQ9fJ8+f2S4Yrxoj0/iINzXm6lT4TL6axpa0QU4+LTinPb8Y45X3M0JQA==
   dependencies:
     "@polymer/iron-meta" "^3.0.1"
 
-"@api-components/amf-helper-mixin@^3.0.0", "@api-components/amf-helper-mixin@^3.0.1", "@api-components/amf-helper-mixin@^3.0.2", "@api-components/amf-helper-mixin@^3.1.0", "@api-components/amf-helper-mixin@^3.1.3", "@api-components/amf-helper-mixin@^3.1.4":
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/@api-components/amf-helper-mixin/-/amf-helper-mixin-3.1.4.tgz#8f17cffd775449d24565b7e00a2b29ae5d8059bc"
-  integrity sha512-FChxH1J0DBJx2xWxQ4melwfWOYcRSquhl9Cr/uqu/1hPk+/C3i3rhlLpe76MGt3kaIsPBo4HI61rAIEmpLMR5w==
+"@api-components/amf-helper-mixin@^3.0.1", "@api-components/amf-helper-mixin@^3.0.2", "@api-components/amf-helper-mixin@^3.1.3", "@api-components/amf-helper-mixin@^3.1.4", "@api-components/amf-helper-mixin@^3.1.6":
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/@api-components/amf-helper-mixin/-/amf-helper-mixin-3.1.6.tgz#535ccf651eea118105052c1b4f997302f4581e3c"
+  integrity sha512-QawQCq6rEDRBi8BJ1lpSlUavNGCkf6Qgakg4sBpZSHkgD5oDPb6xSxcsWpX+ut5sZe8VgvjEWl8Gom6P+fm+1A==
   dependencies:
     "@polymer/iron-meta" "^3.0.0"
     "@polymer/polymer" "^3.3.0"
@@ -597,19 +622,19 @@
     lit-element "^2.2.1"
     lit-html "^1.1.1"
 
-"@api-components/api-body-document@^3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@api-components/api-body-document/-/api-body-document-3.0.2.tgz#232eb7ea9c8a7ab242773db59c88efc5298c351c"
-  integrity sha512-maqOj1zVH4CoQdcfNfv6Gg/SJowcqadJrFFyyUQDhEtEwYF1kHZlceGPsGU5sXj+4gUVk/rqEO/86EQ+fZHTlw==
+"@api-components/api-body-document@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@api-components/api-body-document/-/api-body-document-3.0.3.tgz#adf7492976219f3a627dd192aad14bccc927cdb9"
+  integrity sha512-YX4+CBsEDZni85wWM/yViGZ5EZDCRkqgLM4FIPmcPBwryoLAg/YojSLUW4MV3NOzMJ8z1YsxI95VpZCaDn/yeg==
   dependencies:
     "@advanced-rest-client/arc-icons" "^3.0.0"
     "@advanced-rest-client/arc-marked" "^1.0.2"
     "@advanced-rest-client/markdown-styles" "^3.1.0"
-    "@anypoint-web-components/anypoint-button" "^1.0.4"
-    "@api-components/amf-helper-mixin" "^3.1.4"
-    "@api-components/api-resource-example-document" "^3.0.3"
-    "@api-components/api-schema-document" "^3.0.0"
-    "@api-components/api-type-document" "^3.0.2"
+    "@anypoint-web-components/anypoint-button" "^1.0.10"
+    "@api-components/amf-helper-mixin" "^3.1.6"
+    "@api-components/api-resource-example-document" "^3.0.6"
+    "@api-components/api-schema-document" "^3.0.1"
+    "@api-components/api-type-document" "^3.0.6"
     "@api-components/raml-aware" "^3.0.0"
     "@polymer/iron-collapse" "^3.0.0"
     "@polymer/iron-icon" "^3.0.0"
@@ -640,6 +665,21 @@
     lit-element "^2.0.1"
     lit-html "^1.1.2"
 
+"@api-components/api-console-default-theme@^3.0.0-preview.2":
+  version "3.0.0-preview.2"
+  resolved "https://registry.yarnpkg.com/@api-components/api-console-default-theme/-/api-console-default-theme-3.0.0-preview.2.tgz#c954b4e0e38585a39011b4e959ca5c9afefa32be"
+  integrity sha512-mVprD2PEeyK0MaJkAYUSHOPmMp8xfzWQhRx+b+8IiqshvqXgsX4MUJkQTE/dkibrwz3Lluepmt1sxfZrvyn12g==
+  dependencies:
+    "@polymer/paper-styles" "^3.0.0"
+    "@polymer/polymer" "^3.0.0"
+
+"@api-components/api-console-ext-comm@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@api-components/api-console-ext-comm/-/api-console-ext-comm-3.0.0.tgz#e67375f62498db35af7095bcadf37aecab4d5c19"
+  integrity sha512-aHpuDhsUFUp5tNy0cMtWG52uCOMPMSU+Owpj5JleqnAuHC7bBrBM+qntAZK9PNHm8itRNG+2bov3CwBzdt5bXA==
+  dependencies:
+    lit-element "^2.0.1"
+
 "@api-components/api-documentation-document@^3.0.0":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@api-components/api-documentation-document/-/api-documentation-document-3.0.1.tgz#c80462a63962b0e1a103c76f53adc92bdad3364f"
@@ -650,38 +690,38 @@
     "@api-components/amf-helper-mixin" "^3.1.4"
     lit-element "^2.2.1"
 
-"@api-components/api-documentation@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@api-components/api-documentation/-/api-documentation-3.0.0.tgz#b403e220977f0546fab45983a89c34efd509be30"
-  integrity sha512-vPYbtNkR7GH5USnnhd2qHRSyIXUXXR72ck60sF/aim42pawMb+rLpwBEn5Zb89d1U0DAysfYubZQm5wBtQH5uA==
+"@api-components/api-documentation@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@api-components/api-documentation/-/api-documentation-3.0.1.tgz#959791945c1e84e0eb2b11d79bb80fc655a0090e"
+  integrity sha512-3QuRZnWjJ/B345BWWjqQmXVkkRwq0sfv+MkkBI5ss73zPUrsFB51bu/Cq5gX5JYXgOoskxpLNAGHu3JsUnTzvQ==
   dependencies:
-    "@api-components/amf-helper-mixin" "^3.0.0"
+    "@api-components/amf-helper-mixin" "^3.1.6"
     "@api-components/api-documentation-document" "^3.0.0"
-    "@api-components/api-endpoint-documentation" "^3.0.0"
-    "@api-components/api-method-documentation" "^3.0.0"
+    "@api-components/api-endpoint-documentation" "^3.0.1"
+    "@api-components/api-method-documentation" "^3.0.1"
     "@api-components/api-security-documentation" "^3.0.0"
-    "@api-components/api-summary" "^3.0.0"
-    "@api-components/api-type-documentation" "^3.0.0"
+    "@api-components/api-summary" "^3.0.2"
+    "@api-components/api-type-documentation" "^3.0.1"
     "@api-components/raml-aware" "^3.0.0"
     lit-element "^2.0.1"
     lit-html "^1.1.2"
 
-"@api-components/api-endpoint-documentation@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@api-components/api-endpoint-documentation/-/api-endpoint-documentation-3.0.0.tgz#affe5948964ff5dd30108c5f3b4318bd5e76bf5c"
-  integrity sha512-ov/QYgOS15G40hQFjCYajEi4zlMyE3asp3cKctqvkkRtZO7pk5YRZqxHuDZp+i1TR8PgmHU2qCZVfrBjwmNqOw==
+"@api-components/api-endpoint-documentation@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@api-components/api-endpoint-documentation/-/api-endpoint-documentation-3.0.1.tgz#ccdad410300c601306431d976fc514e6eb44edc8"
+  integrity sha512-s5atSp1P31srxVFHhWxKUvmlBYQbIPMoKStHeKs4ClpY/GZi7bRkgM4es8tthsBBTCMLa3BGJv8DGZ5cQOlFUg==
   dependencies:
     "@advanced-rest-client/arc-icons" "^3.0.0"
     "@advanced-rest-client/arc-marked" "^1.0.2"
     "@advanced-rest-client/clipboard-copy" "^3.0.1"
-    "@advanced-rest-client/http-code-snippets" "^3.0.0"
+    "@advanced-rest-client/http-code-snippets" "^3.0.1"
     "@advanced-rest-client/markdown-styles" "^3.1.0"
-    "@anypoint-web-components/anypoint-button" "^1.0.7"
-    "@api-components/amf-helper-mixin" "^3.1.4"
+    "@anypoint-web-components/anypoint-button" "^1.0.10"
+    "@api-components/amf-helper-mixin" "^3.1.6"
     "@api-components/api-annotation-document" "^3.0.1"
     "@api-components/api-example-generator" "^3.0.2"
-    "@api-components/api-method-documentation" "^3.0.0"
-    "@api-components/api-parameters-document" "^3.0.3"
+    "@api-components/api-method-documentation" "^3.0.1"
+    "@api-components/api-parameters-document" "^3.0.4"
     "@api-components/api-request-panel" "^3.0.0"
     "@api-components/http-method-label" "^3.0.0"
     "@api-components/raml-aware" "^3.0.0"
@@ -705,14 +745,14 @@
   dependencies:
     lit-element "^2.2.1"
 
-"@api-components/api-headers-document@^3.0.0", "@api-components/api-headers-document@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@api-components/api-headers-document/-/api-headers-document-3.0.1.tgz#ef23ea6a6965b0148f8dd816282493362a98d281"
-  integrity sha512-yL2aK5i9xt93hYDCmgUq9kBwLBLKwBf9n5e0+M2f/jsD4HqvmQR5T7a7JRZN0FeM/cugCbSoB/oXDpAMX3EMew==
+"@api-components/api-headers-document@^3.0.0", "@api-components/api-headers-document@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@api-components/api-headers-document/-/api-headers-document-3.0.2.tgz#711998ecc8b4cc9c2ade276253971c4246da420b"
+  integrity sha512-AmKX6ExtynJJrqLeMMbC5g6UVhpHFfHBVv1AyRlMPvDXsgtEIsonXFNNmB7IzGg8Wy+3J3C/pMWF4CMPkrfKMw==
   dependencies:
     "@advanced-rest-client/arc-icons" "^3.0.0"
-    "@anypoint-web-components/anypoint-button" "^1.0.4"
-    "@api-components/api-type-document" "^3.0.3"
+    "@anypoint-web-components/anypoint-button" "^1.0.10"
+    "@api-components/api-type-document" "^3.0.6"
     "@api-components/raml-aware" "^3.0.0"
     "@polymer/iron-collapse" "^3.0.0"
     "@polymer/iron-icon" "^3.0.0"
@@ -760,24 +800,24 @@
     "@polymer/iron-icon" "^3.0.1"
     lit-element "^2.2.1"
 
-"@api-components/api-method-documentation@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@api-components/api-method-documentation/-/api-method-documentation-3.0.0.tgz#b58544cb682846ff71c27eb881fed2adc1a2df83"
-  integrity sha512-DZ4mwSpQREuNS6ege8cX4gWgoIC6+gfNFgZy4A1CKs+TPPQX2KvGxtoZwPQ/BVrQPULFdQG3OBG6EMX3zpfFdw==
+"@api-components/api-method-documentation@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@api-components/api-method-documentation/-/api-method-documentation-3.0.1.tgz#2504983ab62486ff2fa4c0f1b103f3b945d21cbc"
+  integrity sha512-vS4MGNILqSKJZ4zfD1wSddDhgOOI896uuFbhqRzVpN0yvkh7l29gzy0OnjBBKfyiKPQpOJ4BbdwqgDDi4VS+rg==
   dependencies:
     "@advanced-rest-client/arc-icons" "^3.0.0"
     "@advanced-rest-client/arc-marked" "^1.0.2"
     "@advanced-rest-client/clipboard-copy" "^3.0.1"
-    "@advanced-rest-client/http-code-snippets" "^3.0.0"
+    "@advanced-rest-client/http-code-snippets" "^3.0.1"
     "@advanced-rest-client/markdown-styles" "^3.1.0"
-    "@anypoint-web-components/anypoint-button" "^1.0.7"
-    "@api-components/amf-helper-mixin" "^3.1.4"
+    "@anypoint-web-components/anypoint-button" "^1.0.10"
+    "@api-components/amf-helper-mixin" "^3.1.6"
     "@api-components/api-annotation-document" "^3.0.1"
-    "@api-components/api-body-document" "^3.0.2"
+    "@api-components/api-body-document" "^3.0.3"
     "@api-components/api-example-generator" "^3.0.2"
-    "@api-components/api-headers-document" "^3.0.1"
-    "@api-components/api-parameters-document" "^3.0.3"
-    "@api-components/api-responses-document" "^3.0.1"
+    "@api-components/api-headers-document" "^3.0.2"
+    "@api-components/api-parameters-document" "^3.0.4"
+    "@api-components/api-responses-document" "^3.0.3"
     "@api-components/api-security-documentation" "^3.0.0"
     "@api-components/http-method-label" "^3.0.0"
     "@api-components/raml-aware" "^3.0.0"
@@ -786,7 +826,7 @@
     lit-element "^2.0.1"
     lit-html "^1.1.2"
 
-"@api-components/api-navigation@^3.0.0":
+"@api-components/api-navigation@^3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@api-components/api-navigation/-/api-navigation-3.1.0.tgz#67679467529646e925fc59d30ae42892220fbbb3"
   integrity sha512-GlY9OaWlClglHtHGNoSrvZgG+vbr8dJflJXX2IGxyCz48ABnI+BZMFmy6yEQ0JZogd+JW5gzRqPd2bkildv3yg==
@@ -801,10 +841,10 @@
     lit-element "^2.2.1"
     lit-html "^1.1.2"
 
-"@api-components/api-parameters-document@^3.0.0", "@api-components/api-parameters-document@^3.0.3":
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/@api-components/api-parameters-document/-/api-parameters-document-3.0.3.tgz#b853b50f2281dc313015f4b82640639fbe30ca9e"
-  integrity sha512-BzI2jiHzHHfEiMDcoW282trbd9JOm6+c8C8DNAqRMX3zbE3wXBmpYsSqYTeq03j973DkeehJ/vK8G9Zu1mgv+A==
+"@api-components/api-parameters-document@^3.0.0", "@api-components/api-parameters-document@^3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@api-components/api-parameters-document/-/api-parameters-document-3.0.4.tgz#a591dded488df781bccd0f8a6bd1e92c6182d410"
+  integrity sha512-Ad3dnc6n7YHCJHUSMj8TXdK7myzNZdbWPVSQN1hDVFZ5TzfQaejJBxpRzTxWmrRgsmUYnAE1A4HYEcVZNs1lrQ==
   dependencies:
     "@advanced-rest-client/arc-icons" "^3.0.0"
     "@anypoint-web-components/anypoint-button" "^1.0.4"
@@ -871,7 +911,7 @@
     lit-element "^2.0.1"
     lit-html "^1.1.2"
 
-"@api-components/api-resource-example-document@^3.0.2", "@api-components/api-resource-example-document@^3.0.3", "@api-components/api-resource-example-document@^3.0.5":
+"@api-components/api-resource-example-document@^3.0.6":
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/@api-components/api-resource-example-document/-/api-resource-example-document-3.0.6.tgz#b1e906f643d0e95c8a5af6be5f43c00f38729228"
   integrity sha512-cmyXnnv7T5uBMPPiEWqDYey+8NoVgTU7/S9wXuLnE4iZzn8fZUpslj8IIFdUpubBWnDPun/nVCoOr3Rc1rGGMw==
@@ -885,22 +925,22 @@
     "@polymer/prism-element" "^3.0.0"
     lit-element "^2.2.1"
 
-"@api-components/api-responses-document@^3.0.0", "@api-components/api-responses-document@^3.0.1":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@api-components/api-responses-document/-/api-responses-document-3.0.2.tgz#a3711475dfb63c7d5cea393023a8b354efdcfcc6"
-  integrity sha512-tStARc9g1W8tpdRcVWd8X0nxAkTqWo2r5oXrj5lkXE8GQhsqQ7wS8s/8E8qEzqd+rd0fgwSzkSVzZ0uyw+N81g==
+"@api-components/api-responses-document@^3.0.0", "@api-components/api-responses-document@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@api-components/api-responses-document/-/api-responses-document-3.0.3.tgz#dc89e1f65aaac60e9c3c5992b12743b2d0abf8d0"
+  integrity sha512-8lFtKsx4yF2CQg1b3345Vo/HHKQw3o55PRjrgiHTqtrTTMs7ke+wXjoHCv2DdARoNQRkMGN81p5JzMbY39fNCg==
   dependencies:
     "@advanced-rest-client/arc-marked" "^1.0.2"
     "@advanced-rest-client/markdown-styles" "^3.1.0"
-    "@anypoint-web-components/anypoint-tabs" "^0.1.0"
-    "@api-components/amf-helper-mixin" "^3.1.4"
+    "@anypoint-web-components/anypoint-tabs" "^0.1.1"
+    "@api-components/amf-helper-mixin" "^3.1.6"
     "@api-components/api-annotation-document" "^3.0.1"
-    "@api-components/api-body-document" "^3.0.2"
-    "@api-components/api-headers-document" "^3.0.1"
+    "@api-components/api-body-document" "^3.0.3"
+    "@api-components/api-headers-document" "^3.0.2"
     "@api-components/raml-aware" "^3.0.0"
     lit-element "^2.2.1"
 
-"@api-components/api-schema-document@^3.0.0":
+"@api-components/api-schema-document@^3.0.1":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@api-components/api-schema-document/-/api-schema-document-3.0.1.tgz#faad0021c0b5198effe6b7ff01d089fc64d1a05c"
   integrity sha512-QZ8ysxdG4s0jZC85BhziUoCIXbSrSKY1NoTUBGrsLEa6nOecZUjmnJO1PyczlhWW+lYyUCS3iIg2bVLUrZ4C5w==
@@ -926,7 +966,7 @@
     "@api-components/raml-aware" "^3.0.0"
     lit-element "^2.2.1"
 
-"@api-components/api-summary@^3.0.0":
+"@api-components/api-summary@^3.0.2":
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/@api-components/api-summary/-/api-summary-3.0.2.tgz#b8faa0e3a74041b1011d2f7269ebb40f0946e0e0"
   integrity sha512-wsh18GJusqDzuCT9rJZW+WqbWp20EZv+6kbSKmMfIkKxCUWw5WqYcnxpr+tclH8FmRMhbD84XQdoYI7e577CPQ==
@@ -939,34 +979,34 @@
     "@polymer/iron-meta" "^3.0.0"
     lit-element "^2.0.1"
 
-"@api-components/api-type-document@^3.0.0", "@api-components/api-type-document@^3.0.2", "@api-components/api-type-document@^3.0.3":
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/@api-components/api-type-document/-/api-type-document-3.0.5.tgz#3339764c23b44ea97ef4acf571886600c96e89d2"
-  integrity sha512-d+iqGbdFuWdSMHOBq7vlMiRqGpJFvoGLkdTeSn1L4InulkU0FSCCLDOj9sTs0eBUe2oITuqTUIzmuqEnLVmOXw==
+"@api-components/api-type-document@^3.0.3", "@api-components/api-type-document@^3.0.6":
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/@api-components/api-type-document/-/api-type-document-3.0.6.tgz#d7722325d00f95deda4925e80ecec2e6ca24c88c"
+  integrity sha512-fY4fId9WYhHOaN9MoJOUDKa3sQ7wvAe9sXhp/jIq3+oK9dOP+pLwRgfdsusF9UE+fUj9o/zRl1QPZhOH/8b3JQ==
   dependencies:
     "@advanced-rest-client/arc-marked" "^1.0.2"
     "@advanced-rest-client/markdown-styles" "^3.1.0"
-    "@anypoint-web-components/anypoint-button" "^1.0.7"
-    "@api-components/amf-helper-mixin" "^3.1.4"
+    "@anypoint-web-components/anypoint-button" "^1.0.10"
+    "@api-components/amf-helper-mixin" "^3.1.6"
     "@api-components/api-annotation-document" "^3.0.0"
-    "@api-components/api-resource-example-document" "^3.0.5"
+    "@api-components/api-resource-example-document" "^3.0.6"
     "@api-components/raml-aware" "^3.0.0"
     lit-element "^2.2.1"
 
-"@api-components/api-type-documentation@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@api-components/api-type-documentation/-/api-type-documentation-3.0.0.tgz#e69ee0b3058efb1285b9ee873d124618dce3104d"
-  integrity sha512-5CBTKTwW/yocSZuacD/BgIdxEWHvTxOR1HNr7QyTwwE11XqcDGAJ8YqQ9MtYYpeA+FX9v7fZ4pGFIoITSLa8MA==
+"@api-components/api-type-documentation@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@api-components/api-type-documentation/-/api-type-documentation-3.0.1.tgz#09119acba56ef989f1934e305ad34de46461cc4e"
+  integrity sha512-moG7CDVXCmqD4JK3pmWjyU5GH66piMtBXB2bAbPiORdzK+W1/Ey+VPKq03T6E82XN4I3hSAoYF9tYkotq9ml5Q==
   dependencies:
-    "@advanced-rest-client/arc-marked" "^1.0.0"
+    "@advanced-rest-client/arc-marked" "^1.0.2"
     "@advanced-rest-client/markdown-styles" "^3.1.0"
-    "@api-components/amf-helper-mixin" "^3.0.1"
-    "@api-components/api-annotation-document" "^3.0.0"
-    "@api-components/api-resource-example-document" "^3.0.2"
-    "@api-components/api-schema-document" "^3.0.0"
-    "@api-components/api-type-document" "^3.0.0"
+    "@api-components/amf-helper-mixin" "^3.1.6"
+    "@api-components/api-annotation-document" "^3.0.1"
+    "@api-components/api-resource-example-document" "^3.0.6"
+    "@api-components/api-schema-document" "^3.0.1"
+    "@api-components/api-type-document" "^3.0.6"
     "@api-components/raml-aware" "^3.0.0"
-    lit-element "^2.0.1"
+    lit-element "^2.2.1"
 
 "@api-components/api-url-data-model@^3.0.2":
   version "3.0.2"
@@ -1035,6 +1075,17 @@
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@api-components/raml-aware/-/raml-aware-3.0.0.tgz#5c10d56c2db18059a81ef4027dae22f6f747984f"
   integrity sha512-lWIjd8Wq6tYJmF8ZXyUgQdGq+vhXP7pKY/QcPQdKOn2IXb4/gqTglebtXnxjME41+uKSPQoMSKTEVT/PwX93qQ==
+
+"@polymer/app-layout@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@polymer/app-layout/-/app-layout-3.1.0.tgz#b146cd2ce202e079ac51059a4fcaef03f5b2f3c4"
+  integrity sha512-+jf5/TtUDj/la9Vi59ooGNjnTN8JTkyIUK8gxAms0N3MmyeqrmcNLlJKDVyE6IIGKz0WfFeGKqKtmtTLHrZIlg==
+  dependencies:
+    "@polymer/iron-flex-layout" "^3.0.0-pre.26"
+    "@polymer/iron-media-query" "^3.0.0-pre.26"
+    "@polymer/iron-resizable-behavior" "^3.0.0-pre.26"
+    "@polymer/iron-scroll-target-behavior" "^3.0.0-pre.26"
+    "@polymer/polymer" "^3.0.0"
 
 "@polymer/font-roboto@^3.0.1":
   version "3.0.2"
@@ -1109,6 +1160,13 @@
     "@polymer/iron-meta" "^3.0.0-pre.26"
     "@polymer/polymer" "^3.0.0"
 
+"@polymer/iron-media-query@^3.0.0", "@polymer/iron-media-query@^3.0.0-pre.26":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@polymer/iron-media-query/-/iron-media-query-3.0.1.tgz#5cd8a1c1e8c9b8bafd3dd5da14e0f8d2cfa76d83"
+  integrity sha512-czUX1pm1zfmfcZtq5J57XFkcobBv08Y50exp0/3v8Bos5VL/jv2tU0RwiTfDBxUMhjicGbgwEBFQPY2V5DMzyw==
+  dependencies:
+    "@polymer/polymer" "^3.0.0"
+
 "@polymer/iron-meta@^3.0.0", "@polymer/iron-meta@^3.0.0-pre.26", "@polymer/iron-meta@^3.0.1":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@polymer/iron-meta/-/iron-meta-3.0.1.tgz#7f140628d127b0a284f882f1bb323a261bc125f5"
@@ -1137,6 +1195,13 @@
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@polymer/iron-resizable-behavior/-/iron-resizable-behavior-3.0.1.tgz#e284348ed7c1c7e263f7039297532fa954025ea2"
   integrity sha512-FyHxRxFspVoRaeZSWpT3y0C9awomb4tXXolIJcZ7RvXhMP632V5lez+ch5G5SwK0LpnAPkg35eB0LPMFv+YMMQ==
+  dependencies:
+    "@polymer/polymer" "^3.0.0"
+
+"@polymer/iron-scroll-target-behavior@^3.0.0-pre.26":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@polymer/iron-scroll-target-behavior/-/iron-scroll-target-behavior-3.0.1.tgz#29fa644b320fb29ab6c68eb6d08a6520157764ac"
+  integrity sha512-xg1WanG25BIkQE8rhuReqY9zx1K5M7F+YAIYpswEp5eyDIaZ1Y3vUmVeQ3KG+hiSugzI1M752azXN7kvyhOBcQ==
   dependencies:
     "@polymer/polymer" "^3.0.0"
 
@@ -1278,6 +1343,13 @@ jsrsasign@^8.0.12:
   resolved "https://registry.yarnpkg.com/jsrsasign/-/jsrsasign-8.0.12.tgz#22abb9656d34a30b9530436720835e89c2e5c316"
   integrity sha1-Iqu5ZW00owuVMENnIINeicLlwxY=
 
+lit-element-router@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/lit-element-router/-/lit-element-router-1.2.5.tgz#a0256e80b1ffa945270b1f0fd7d5b9e3606cba0b"
+  integrity sha512-EKIUZA2uFSgU4DXdIcXbOmQYfti9xE2V9DpSFYBAEgk2TiPaRITQPFGx8pDhEKwx9UsyGlboc6YUnqH4KowXFQ==
+  dependencies:
+    lit-element "^2.0.1"
+
 lit-element@^2.0.1, lit-element@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/lit-element/-/lit-element-2.2.1.tgz#79c94d8cfdc2d73b245656e37991bd1e4811d96f"
@@ -1330,7 +1402,7 @@ underscore@~1.6.0:
   resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.6.0.tgz#8b38b10cacdef63337b8b24e4ff86d45aea529a8"
   integrity sha1-izixDKze9jM3uLJOT/htRa6lKag=
 
-web-animations-js@^2.3.1:
+web-animations-js@^2.3.1, web-animations-js@^2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/web-animations-js/-/web-animations-js-2.3.2.tgz#a51963a359c543f97b47c7d4bc2d811f9fc9e153"
   integrity sha512-TOMFWtQdxzjWp8qx4DAraTWTsdhxVSiWa6NkPFSaPtZ1diKUxTn4yTix73A1euG1WbSOMMPcY51cnjTIHrGtDA==
