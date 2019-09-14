@@ -21,3 +21,4 @@ import '@anypoint-web-components/anypoint-styles/typography.js';
 import '@anypoint-web-components/anypoint-styles/default-theme.js';
 import '@advanced-rest-client/arc-icons/arc-icons.js';
 import '@advanced-rest-client/xhr-simple-request/xhr-simple-request.js';
+import './theme.css';
