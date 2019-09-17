@@ -9,7 +9,7 @@
     "url": "git://github.com/advanced-rest-client/lc-api-console.git"
   },
   "name": "lc-api-console",
-  "version": "1.0.0-preview.2",
+  "version": "1.0.0-preview.3",
   "license": "CPAL-1.0",
   "main": "index.js",
   "authors": [
