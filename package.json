@@ -11,7 +11,7 @@
   "name": "lc-api-console",
   "version": "1.0.0-preview.2",
   "license": "CPAL-1.0",
-  "main": "build.js",
+  "main": "index.js",
   "authors": [
     "Pawel Psztyc",
     "The Advanced REST client authors <arc@mulesoft.com>"
