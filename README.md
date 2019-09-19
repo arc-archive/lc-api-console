@@ -25,15 +25,52 @@ npm i
 npm run build
 ```
 
-### Preview build
+### Using the bundle
 
-```
-npm run start:build
+The example of how to import bundle into your web application is in `demo.html` file. In essence you need to import 2 main files:
+
+```html
+<script src="dist/vendor.js"></script>
+<script src="dist/apic-import.js"></script>
 ```
 
-The preview page won't show anything as components are not included into `components/index.html` page. However the point is to check DevTools console for any import errors.
-The console should be empty.
+The `vendor.js` file contains bundled CodeMirror and other dynamic depndencies for API console. The `apic-import.js` file takes care of import APIC sources into the page. It decides which files should be included depdning on API availability in current browser.
+
+Once the sources are included you can use API console. See API Console repository page for documentation.
+
+#### API Console Element
+
+Used by API Designeer
+
+```html
+<api-console amf="..." selectedShape="..." selectedSchapeType="..."></api-console>
+```
+
+#### API Console Application
+
+Used by APIKit
+
+```html
+<body>
+  <api-console-app></api-console-app>
+  <script src="app.js"></script>
+  <!-- See https://github.com/mulesoft/api-console/tree/6.0.0-preview/demo/standalone -->
+</body>
+```
+
+### API Components
+
+Used by Exchange
+
+```html
+<body>
+  <api-navigation amf="..."></api-navigation>
+  <api-documentation amf="..."></api-documentation>
+  <api-request-panel amf="..."></api-request-panel>
+</body>
+```
 
 ## TODO
 
--   [ ] expand `rollup` configuration to create a bundle of non-module dependencies (CodeMirror, linters, etc)
+-   [x] expand `rollup` configuration to create a bundle of non-module dependencies (CodeMirror, linters, etc)
+-   [ ] build own rollup plugin based on `webpack-index-html-plugin` to avoid rewriting generated index file to a JS import
